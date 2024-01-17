@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBFF936B2B57FE62003840F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF936A2B57FE62003840F2 /* AppDelegate.swift */; };
+		CBFF936D2B57FE62003840F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF936C2B57FE62003840F2 /* SceneDelegate.swift */; };
+		CBFF936F2B57FE62003840F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF936E2B57FE62003840F2 /* ViewController.swift */; };
+		CBFF93742B57FE64003840F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBFF93732B57FE64003840F2 /* Assets.xcassets */; };
+		CBFF93772B57FE64003840F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBFF93752B57FE64003840F2 /* LaunchScreen.storyboard */; };
+		CBFF93822B57FE64003840F2 /* SportsBook_HomeWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF93812B57FE64003840F2 /* SportsBook_HomeWorkTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBFF937E2B57FE64003840F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBFF935F2B57FE61003840F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBFF93662B57FE62003840F2;
+			remoteInfo = "SportsBook-HomeWork";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CBFF93672B57FE62003840F2 /* SportsBook-HomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SportsBook-HomeWork.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBFF936A2B57FE62003840F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CBFF936C2B57FE62003840F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CBFF936E2B57FE62003840F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBFF93732B57FE64003840F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBFF93762B57FE64003840F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBFF93782B57FE64003840F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBFF937D2B57FE64003840F2 /* SportsBook-HomeWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SportsBook-HomeWorkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBFF93812B57FE64003840F2 /* SportsBook_HomeWorkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsBook_HomeWorkTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBFF93642B57FE62003840F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBFF937A2B57FE64003840F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB0D360A2B581EF000D76D40 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CBFF93732B57FE64003840F2 /* Assets.xcassets */,
+				CBFF93752B57FE64003840F2 /* LaunchScreen.storyboard */,
+				CBFF93782B57FE64003840F2 /* Info.plist */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CB0D360B2B581F0E00D76D40 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CB0D360A2B581EF000D76D40 /* Base */,
+				CBFF936A2B57FE62003840F2 /* AppDelegate.swift */,
+				CBFF936C2B57FE62003840F2 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CB0D360C2B581F2100D76D40 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CB0D360E2B581F3600D76D40 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		CB0D36102B581F5400D76D40 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CB0D36122B581F9900D76D40 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CBFF935E2B57FE61003840F2 = {
+			isa = PBXGroup;
+			children = (
+				CBFF93692B57FE62003840F2 /* SportsBook-HomeWork */,
+				CBFF93802B57FE64003840F2 /* SportsBook-HomeWorkTests */,
+				CBFF93682B57FE62003840F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBFF93682B57FE62003840F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBFF93672B57FE62003840F2 /* SportsBook-HomeWork.app */,
+				CBFF937D2B57FE64003840F2 /* SportsBook-HomeWorkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBFF93692B57FE62003840F2 /* SportsBook-HomeWork */ = {
+			isa = PBXGroup;
+			children = (
+				CB0D360B2B581F0E00D76D40 /* App */,
+				CB0D360C2B581F2100D76D40 /* Modules */,
+				CB0D360E2B581F3600D76D40 /* UIComponents */,
+				CB0D36102B581F5400D76D40 /* Networking */,
+				CBFF936E2B57FE62003840F2 /* ViewController.swift */,
+				CB0D36122B581F9900D76D40 /* Helpers */,
+			);
+			path = "SportsBook-HomeWork";
+			sourceTree = "<group>";
+		};
+		CBFF93802B57FE64003840F2 /* SportsBook-HomeWorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBFF93812B57FE64003840F2 /* SportsBook_HomeWorkTests.swift */,
+			);
+			path = "SportsBook-HomeWorkTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBFF93662B57FE62003840F2 /* SportsBook-HomeWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBFF93912B57FE64003840F2 /* Build configuration list for PBXNativeTarget "SportsBook-HomeWork" */;
+			buildPhases = (
+				CBFF93632B57FE62003840F2 /* Sources */,
+				CBFF93642B57FE62003840F2 /* Frameworks */,
+				CBFF93652B57FE62003840F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SportsBook-HomeWork";
+			productName = "SportsBook-HomeWork";
+			productReference = CBFF93672B57FE62003840F2 /* SportsBook-HomeWork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBFF937C2B57FE64003840F2 /* SportsBook-HomeWorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBFF93942B57FE64003840F2 /* Build configuration list for PBXNativeTarget "SportsBook-HomeWorkTests" */;
+			buildPhases = (
+				CBFF93792B57FE64003840F2 /* Sources */,
+				CBFF937A2B57FE64003840F2 /* Frameworks */,
+				CBFF937B2B57FE64003840F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBFF937F2B57FE64003840F2 /* PBXTargetDependency */,
+			);
+			name = "SportsBook-HomeWorkTests";
+			productName = "SportsBook-HomeWorkTests";
+			productReference = CBFF937D2B57FE64003840F2 /* SportsBook-HomeWorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBFF935F2B57FE61003840F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CBFF93662B57FE62003840F2 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					CBFF937C2B57FE64003840F2 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = CBFF93662B57FE62003840F2;
+					};
+				};
+			};
+			buildConfigurationList = CBFF93622B57FE61003840F2 /* Build configuration list for PBXProject "SportsBook-HomeWork" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBFF935E2B57FE61003840F2;
+			productRefGroup = CBFF93682B57FE62003840F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBFF93662B57FE62003840F2 /* SportsBook-HomeWork */,
+				CBFF937C2B57FE64003840F2 /* SportsBook-HomeWorkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBFF93652B57FE62003840F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBFF93772B57FE64003840F2 /* LaunchScreen.storyboard in Resources */,
+				CBFF93742B57FE64003840F2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBFF937B2B57FE64003840F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBFF93632B57FE62003840F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBFF936F2B57FE62003840F2 /* ViewController.swift in Sources */,
+				CBFF936B2B57FE62003840F2 /* AppDelegate.swift in Sources */,
+				CBFF936D2B57FE62003840F2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBFF93792B57FE64003840F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBFF93822B57FE64003840F2 /* SportsBook_HomeWorkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBFF937F2B57FE64003840F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBFF93662B57FE62003840F2 /* SportsBook-HomeWork */;
+			targetProxy = CBFF937E2B57FE64003840F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBFF93752B57FE64003840F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBFF93762B57FE64003840F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBFF938F2B57FE64003840F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CBFF93902B57FE64003840F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBFF93922B57FE64003840F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G7LZKNB9W5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SportsBook-HomeWork/App/Base/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SportsBook;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scalefocus.SportsBook-HomeWork";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBFF93932B57FE64003840F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G7LZKNB9W5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SportsBook-HomeWork/App/Base/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SportsBook;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scalefocus.SportsBook-HomeWork";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CBFF93952B57FE64003840F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G7LZKNB9W5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scalefocus.SportsBook-HomeWorkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SportsBook-HomeWork.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SportsBook-HomeWork";
+			};
+			name = Debug;
+		};
+		CBFF93962B57FE64003840F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G7LZKNB9W5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scalefocus.SportsBook-HomeWorkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SportsBook-HomeWork.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SportsBook-HomeWork";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBFF93622B57FE61003840F2 /* Build configuration list for PBXProject "SportsBook-HomeWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBFF938F2B57FE64003840F2 /* Debug */,
+				CBFF93902B57FE64003840F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBFF93912B57FE64003840F2 /* Build configuration list for PBXNativeTarget "SportsBook-HomeWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBFF93922B57FE64003840F2 /* Debug */,
+				CBFF93932B57FE64003840F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBFF93942B57FE64003840F2 /* Build configuration list for PBXNativeTarget "SportsBook-HomeWorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBFF93952B57FE64003840F2 /* Debug */,
+				CBFF93962B57FE64003840F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBFF935F2B57FE61003840F2 /* Project object */;
+}
