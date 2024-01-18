@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "A8429052-D534-4B06-9DB0-15ABBC5C119A",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:SportsBook-HomeWork.xcodeproj",
+        "identifier" : "CBFF937C2B57FE64003840F2",
+        "name" : "SportsBook-HomeWorkTests"
+      }
+    }
+  ],
+  "version" : 1
+}
