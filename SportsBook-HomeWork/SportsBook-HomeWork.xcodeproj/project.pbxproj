@@ -20,6 +20,7 @@
 		CB245E122B59732C00E10119 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E112B59732C00E10119 /* NetworkServiceTests.swift */; };
 		CB245E142B59829E00E10119 /* SportsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E132B59829E00E10119 /* SportsData.swift */; };
 		CB245E162B59838F00E10119 /* GetSportsDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E152B59838F00E10119 /* GetSportsDataRequest.swift */; };
+		CB245E182B5983E800E10119 /* GetSportsDataRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E172B5983E800E10119 /* GetSportsDataRequestTests.swift */; };
 		CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */; };
 		CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */; };
 		CBF1E7A92B586310002D5FCD /* NetworkClientTestsMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */; };
@@ -55,6 +56,7 @@
 		CB245E112B59732C00E10119 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
 		CB245E132B59829E00E10119 /* SportsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsData.swift; sourceTree = "<group>"; };
 		CB245E152B59838F00E10119 /* GetSportsDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSportsDataRequest.swift; sourceTree = "<group>"; };
+		CB245E172B5983E800E10119 /* GetSportsDataRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSportsDataRequestTests.swift; sourceTree = "<group>"; };
 		CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
 		CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTestsMocks.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				CB245E0F2B59721900E10119 /* GetStatusRequestTests.swift */,
+				CB245E172B5983E800E10119 /* GetSportsDataRequestTests.swift */,
 			);
 			path = RequestsTests;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */,
 				CB245E102B59721900E10119 /* GetStatusRequestTests.swift in Sources */,
 				CBF1E7A92B586310002D5FCD /* NetworkClientTestsMocks.swift in Sources */,
+				CB245E182B5983E800E10119 /* GetSportsDataRequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
