@@ -13,6 +13,8 @@
 		CB245DFA2B5899FE00E10119 /* NetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245DF92B5899FE00E10119 /* NetworkClientProtocol.swift */; };
 		CB245DFC2B589A7300E10119 /* URL+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245DFB2B589A7300E10119 /* URL+Validation.swift */; };
 		CB245E052B59587E00E10119 /* NetworkRequestProtocolExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E042B59587E00E10119 /* NetworkRequestProtocolExtensionTests.swift */; };
+		CB245E082B596D1800E10119 /* GetStatusRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E072B596D1800E10119 /* GetStatusRequest.swift */; };
+		CB245E0D2B596E4700E10119 /* APIStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E0C2B596E4700E10119 /* APIStatus.swift */; };
 		CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */; };
 		CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */; };
 		CBF1E7A92B586310002D5FCD /* NetworkClientTestsMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */; };
@@ -41,6 +43,8 @@
 		CB245DF92B5899FE00E10119 /* NetworkClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientProtocol.swift; sourceTree = "<group>"; };
 		CB245DFB2B589A7300E10119 /* URL+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Validation.swift"; sourceTree = "<group>"; };
 		CB245E042B59587E00E10119 /* NetworkRequestProtocolExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestProtocolExtensionTests.swift; sourceTree = "<group>"; };
+		CB245E072B596D1800E10119 /* GetStatusRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStatusRequest.swift; sourceTree = "<group>"; };
+		CB245E0C2B596E4700E10119 /* APIStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIStatus.swift; sourceTree = "<group>"; };
 		CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
 		CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTestsMocks.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				CB245DFD2B589B0100E10119 /* BaseNetworkingLayer */,
+				CB245E062B596D0500E10119 /* Requests */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -142,6 +147,22 @@
 				CB245E042B59587E00E10119 /* NetworkRequestProtocolExtensionTests.swift */,
 			);
 			path = BaseNetworkingLayerTests;
+			sourceTree = "<group>";
+		};
+		CB245E062B596D0500E10119 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				CB245E072B596D1800E10119 /* GetStatusRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		CB245E0B2B596E2A00E10119 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB245E0C2B596E4700E10119 /* APIStatus.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		CBF1E7A52B58629A002D5FCD /* NetworkingTests */ = {
@@ -177,6 +198,7 @@
 				CBFF936E2B57FE62003840F2 /* ViewController.swift */,
 				CB0D360B2B581F0E00D76D40 /* App */,
 				CB0D360C2B581F2100D76D40 /* Modules */,
+				CB245E0B2B596E2A00E10119 /* Models */,
 				CB0D360E2B581F3600D76D40 /* UIComponents */,
 				CB0D36102B581F5400D76D40 /* Networking */,
 				CB0D36122B581F9900D76D40 /* Helpers */,
@@ -298,6 +320,8 @@
 				CBFF936F2B57FE62003840F2 /* ViewController.swift in Sources */,
 				CBFF936B2B57FE62003840F2 /* AppDelegate.swift in Sources */,
 				CBFF936D2B57FE62003840F2 /* SceneDelegate.swift in Sources */,
+				CB245E082B596D1800E10119 /* GetStatusRequest.swift in Sources */,
+				CB245E0D2B596E4700E10119 /* APIStatus.swift in Sources */,
 				CB245DF82B5899DD00E10119 /* NetworkRequestProtocol.swift in Sources */,
 				CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */,
 				CB245DF62B5899BC00E10119 /* NetworkErrors.swift in Sources */,
