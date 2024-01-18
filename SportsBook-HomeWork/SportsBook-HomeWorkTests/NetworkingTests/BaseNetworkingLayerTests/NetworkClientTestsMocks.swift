@@ -50,26 +50,34 @@ extension NetworkClientTests {
         var mockParameters: [String: Any]?
         var mockBaseURL: URL?
 
-        var baseURL: URL {
+        var baseURL: URL? {
             guard let mockBaseURL = mockBaseURL else {
                 return URL(string: "https://api.example.com")!
             }
             return mockBaseURL
         }
+
         var path: String {
             return "/endpoint"
         }
+
         var method: HTTPMethod {
             return .get
         }
+
         var headers: [String: String] {
             return ["Authorization": "Bearer yourAccessToken"]
         }
+
         var parameters: [String: Any]? {
             guard let mockParameters = mockParameters else {
                 return ["someKey": "someValue"]
             }
             return  mockParameters
+        }
+
+        var requiresAuthorization: Bool {
+            return false
         }
     }
 

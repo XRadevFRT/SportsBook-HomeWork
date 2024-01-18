@@ -8,7 +8,7 @@
 import XCTest
 @testable import SportsBook_HomeWork
 
-class NetworkClientTests: XCTestCase {
+final class NetworkClientTests: XCTestCase {
     enum Constants {
         static var completionCalledMessage = "Completion called"
         static var expectedFailureButGotSuccessMessage = "Expected failure, but got success"
@@ -21,7 +21,7 @@ class NetworkClientTests: XCTestCase {
             """
     }
 
-    var networkClient: NetworkClient!
+    private var networkClient: NetworkClient!
 
     override func setUp() {
         super.setUp()
