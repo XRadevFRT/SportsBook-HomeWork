@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB245DF42B58994200E10119 /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245DF32B58994200E10119 /* HTTPMethods.swift */; };
+		CB245DF62B5899BC00E10119 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245DF52B5899BC00E10119 /* NetworkErrors.swift */; };
+		CB245DF82B5899DD00E10119 /* NetworkRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245DF72B5899DD00E10119 /* NetworkRequestProtocol.swift */; };
+		CB245DFA2B5899FE00E10119 /* NetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245DF92B5899FE00E10119 /* NetworkClientProtocol.swift */; };
+		CB245DFC2B589A7300E10119 /* URL+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245DFB2B589A7300E10119 /* URL+Validation.swift */; };
+		CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */; };
+		CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */; };
+		CBF1E7A92B586310002D5FCD /* NetworkClientTestsMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */; };
 		CBFF936B2B57FE62003840F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF936A2B57FE62003840F2 /* AppDelegate.swift */; };
 		CBFF936D2B57FE62003840F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF936C2B57FE62003840F2 /* SceneDelegate.swift */; };
 		CBFF936F2B57FE62003840F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF936E2B57FE62003840F2 /* ViewController.swift */; };
 		CBFF93742B57FE64003840F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBFF93732B57FE64003840F2 /* Assets.xcassets */; };
 		CBFF93772B57FE64003840F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBFF93752B57FE64003840F2 /* LaunchScreen.storyboard */; };
-		CBFF93822B57FE64003840F2 /* SportsBook_HomeWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF93812B57FE64003840F2 /* SportsBook_HomeWorkTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +33,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB245DF22B58877B00E10119 /* SportsBook-HomeWorkTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SportsBook-HomeWorkTests.xctestplan"; sourceTree = "<group>"; };
+		CB245DF32B58994200E10119 /* HTTPMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
+		CB245DF52B5899BC00E10119 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
+		CB245DF72B5899DD00E10119 /* NetworkRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestProtocol.swift; sourceTree = "<group>"; };
+		CB245DF92B5899FE00E10119 /* NetworkClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientProtocol.swift; sourceTree = "<group>"; };
+		CB245DFB2B589A7300E10119 /* URL+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Validation.swift"; sourceTree = "<group>"; };
+		CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
+		CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTestsMocks.swift; sourceTree = "<group>"; };
 		CBFF93672B57FE62003840F2 /* SportsBook-HomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SportsBook-HomeWork.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBFF936A2B57FE62003840F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBFF936C2B57FE62003840F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,7 +50,6 @@
 		CBFF93762B57FE64003840F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBFF93782B57FE64003840F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBFF937D2B57FE64003840F2 /* SportsBook-HomeWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SportsBook-HomeWorkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBFF93812B57FE64003840F2 /* SportsBook_HomeWorkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsBook_HomeWorkTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +107,7 @@
 		CB0D36102B581F5400D76D40 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				CB245DFD2B589B0100E10119 /* BaseNetworkingLayer */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -99,13 +115,44 @@
 		CB0D36122B581F9900D76D40 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				CB245DFB2B589A7300E10119 /* URL+Validation.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CB245DFD2B589B0100E10119 /* BaseNetworkingLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */,
+				CB245DF92B5899FE00E10119 /* NetworkClientProtocol.swift */,
+				CB245DF32B58994200E10119 /* HTTPMethods.swift */,
+				CB245DF52B5899BC00E10119 /* NetworkErrors.swift */,
+				CB245DF72B5899DD00E10119 /* NetworkRequestProtocol.swift */,
+			);
+			path = BaseNetworkingLayer;
+			sourceTree = "<group>";
+		};
+		CB245E032B58B3E500E10119 /* BaseNetworkingLayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */,
+				CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */,
+			);
+			path = BaseNetworkingLayerTests;
+			sourceTree = "<group>";
+		};
+		CBF1E7A52B58629A002D5FCD /* NetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB245E032B58B3E500E10119 /* BaseNetworkingLayerTests */,
+			);
+			path = NetworkingTests;
 			sourceTree = "<group>";
 		};
 		CBFF935E2B57FE61003840F2 = {
 			isa = PBXGroup;
 			children = (
+				CB245DF22B58877B00E10119 /* SportsBook-HomeWorkTests.xctestplan */,
 				CBFF93692B57FE62003840F2 /* SportsBook-HomeWork */,
 				CBFF93802B57FE64003840F2 /* SportsBook-HomeWorkTests */,
 				CBFF93682B57FE62003840F2 /* Products */,
@@ -124,11 +171,11 @@
 		CBFF93692B57FE62003840F2 /* SportsBook-HomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				CBFF936E2B57FE62003840F2 /* ViewController.swift */,
 				CB0D360B2B581F0E00D76D40 /* App */,
 				CB0D360C2B581F2100D76D40 /* Modules */,
 				CB0D360E2B581F3600D76D40 /* UIComponents */,
 				CB0D36102B581F5400D76D40 /* Networking */,
-				CBFF936E2B57FE62003840F2 /* ViewController.swift */,
 				CB0D36122B581F9900D76D40 /* Helpers */,
 			);
 			path = "SportsBook-HomeWork";
@@ -137,7 +184,7 @@
 		CBFF93802B57FE64003840F2 /* SportsBook-HomeWorkTests */ = {
 			isa = PBXGroup;
 			children = (
-				CBFF93812B57FE64003840F2 /* SportsBook_HomeWorkTests.swift */,
+				CBF1E7A52B58629A002D5FCD /* NetworkingTests */,
 			);
 			path = "SportsBook-HomeWorkTests";
 			sourceTree = "<group>";
@@ -242,9 +289,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB245DF42B58994200E10119 /* HTTPMethods.swift in Sources */,
+				CB245DFC2B589A7300E10119 /* URL+Validation.swift in Sources */,
+				CB245DFA2B5899FE00E10119 /* NetworkClientProtocol.swift in Sources */,
 				CBFF936F2B57FE62003840F2 /* ViewController.swift in Sources */,
 				CBFF936B2B57FE62003840F2 /* AppDelegate.swift in Sources */,
 				CBFF936D2B57FE62003840F2 /* SceneDelegate.swift in Sources */,
+				CB245DF82B5899DD00E10119 /* NetworkRequestProtocol.swift in Sources */,
+				CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */,
+				CB245DF62B5899BC00E10119 /* NetworkErrors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +305,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBFF93822B57FE64003840F2 /* SportsBook_HomeWorkTests.swift in Sources */,
+				CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */,
+				CBF1E7A92B586310002D5FCD /* NetworkClientTestsMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
