@@ -9,18 +9,27 @@ import XCTest
 @testable import SportsBook_HomeWork
 
 final class GetStatusRequestTests: XCTestCase {
+    private var getStatusRequest: GetStatusRequest!
+
+    override  func setUp() {
+        super.setUp()
+        getStatusRequest = .init()
+    }
+
+    override func tearDown() {
+        getStatusRequest = nil
+        super.tearDown()
+    }
+
     func testGetStatusRequestPath() {
-        let getStatusRequest = GetStatusRequest()
         XCTAssertEqual(getStatusRequest.path, "/status")
     }
 
     func testGetStatusRequestMethod() {
-        let getStatusRequest = GetStatusRequest()
         XCTAssertEqual(getStatusRequest.method, .get)
     }
 
     func testGetStatusRequestDefaultValues() {
-        let getStatusRequest = GetStatusRequest()
         XCTAssertEqual(getStatusRequest.baseURL, URL(string: "http://localhost:8080"))
         XCTAssertEqual(getStatusRequest.headers, [:])
         XCTAssertFalse(getStatusRequest.requiresAuthorization)
