@@ -28,8 +28,9 @@ final class NetworkClient: NetworkClientProtocol {
     }
 
     func buildURLRequest(from request: NetworkRequestProtocol) throws -> URLRequest {
-        guard request.baseURL.isValid(),
-              let url = URL(string: request.baseURL.absoluteString + request.path) else {
+        guard let baseURL = request.baseURL,
+              baseURL.isValid(),
+              let url = URL(string: baseURL.absoluteString + request.path) else {
             throw NetworkError.invalidURL
         }
 
