@@ -1,5 +1,5 @@
 //
-//  StatusScreenViewControllerSnapshotTests.swift
+//  BaseSportViewSnapshotTests.swift
 //  SportsBook-HomeWorkTests
 //
 //  Created by Radoslav Radev  on 19.01.24.
@@ -9,7 +9,7 @@ import XCTest
 import SnapshotTesting
 @testable import SportsBook_HomeWork
 
-final class StatusScreenViewControllerSnapshotTests: XCTestCase {
+final class BaseSportViewSnapshotTests: XCTestCase {
     override func setUp() {
         super.setUp()
 
@@ -17,8 +17,10 @@ final class StatusScreenViewControllerSnapshotTests: XCTestCase {
 //         isRecording = true
     }
 
-    func testStatusScreenViewController() {
-        let vc = StatusScreenViewController()
-        assertSnapshots(of: vc, as: [.image])
+    func testBaseSportViewSnapshotTests() {
+        let baseSportView = BaseSportView()
+        baseSportView.updateTitle("Football")
+
+        assertSnapshots(of: SnapshotSupportContainer(baseSportView), as: [.image])
     }
 }

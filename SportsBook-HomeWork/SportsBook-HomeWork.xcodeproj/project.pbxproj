@@ -51,6 +51,7 @@
 		CB245E5D2B5A93D900E10119 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = CB245E5C2B5A93D900E10119 /* SnapshotTesting */; };
 		CB245E5F2B5A93F700E10119 /* StatusScreenViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E5E2B5A93F700E10119 /* StatusScreenViewControllerSnapshotTests.swift */; };
 		CB245E612B5AAA5D00E10119 /* BaseSportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E602B5AAA5D00E10119 /* BaseSportView.swift */; };
+		CB245E642B5AB13F00E10119 /* BaseSportViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E632B5AB13F00E10119 /* BaseSportViewSnapshotTests.swift */; };
 		CB245E662B5AB38F00E10119 /* SnapshotSupportContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E652B5AB38F00E10119 /* SnapshotSupportContainer.swift */; };
 		CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */; };
 		CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */; };
@@ -116,6 +117,7 @@
 		CB245E592B5A854800E10119 /* StatusScreenRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusScreenRouterTests.swift; sourceTree = "<group>"; };
 		CB245E5E2B5A93F700E10119 /* StatusScreenViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusScreenViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
 		CB245E602B5AAA5D00E10119 /* BaseSportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSportView.swift; sourceTree = "<group>"; };
+		CB245E632B5AB13F00E10119 /* BaseSportViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSportViewSnapshotTests.swift; sourceTree = "<group>"; };
 		CB245E652B5AB38F00E10119 /* SnapshotSupportContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotSupportContainer.swift; sourceTree = "<group>"; };
 		CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
@@ -325,6 +327,14 @@
 			path = StatusScreenTests;
 			sourceTree = "<group>";
 		};
+		CB245E622B5AB12B00E10119 /* UIComponentsSnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB245E632B5AB13F00E10119 /* BaseSportViewSnapshotTests.swift */,
+			);
+			path = UIComponentsSnapshotTests;
+			sourceTree = "<group>";
+		};
 		CBF1E7A52B58629A002D5FCD /* NetworkingTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -371,6 +381,7 @@
 		CBFF93802B57FE64003840F2 /* SportsBook-HomeWorkTests */ = {
 			isa = PBXGroup;
 			children = (
+				CB245E622B5AB12B00E10119 /* UIComponentsSnapshotTests */,
 				CB245E3A2B5A0CD100E10119 /* ModulesTests */,
 				CBF1E7A52B58629A002D5FCD /* NetworkingTests */,
 			);
@@ -532,6 +543,7 @@
 				CB245E2E2B59EDFB00E10119 /* GetEventsDataRequestTests.swift in Sources */,
 				CB245E5A2B5A854800E10119 /* StatusScreenRouterTests.swift in Sources */,
 				CB245E3F2B5A0F0000E10119 /* MainFlowModulePresenterTests.swift in Sources */,
+				CB245E642B5AB13F00E10119 /* BaseSportViewSnapshotTests.swift in Sources */,
 				CB245E5F2B5A93F700E10119 /* StatusScreenViewControllerSnapshotTests.swift in Sources */,
 				CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */,
 				CB245E102B59721900E10119 /* GetStatusRequestTests.swift in Sources */,
