@@ -35,6 +35,9 @@
 		CB245E332B59FF5100E10119 /* MainFlowModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E322B59FF5100E10119 /* MainFlowModuleBuilder.swift */; };
 		CB245E352B59FF7400E10119 /* MainFlowModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E342B59FF7400E10119 /* MainFlowModulePresenter.swift */; };
 		CB245E372B59FF8600E10119 /* MainFlowModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E362B59FF8600E10119 /* MainFlowModuleRouter.swift */; };
+		CB245E3D2B5A0D2500E10119 /* MainFlowModuleBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E3C2B5A0D2500E10119 /* MainFlowModuleBuilderTests.swift */; };
+		CB245E3F2B5A0F0000E10119 /* MainFlowModulePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E3E2B5A0F0000E10119 /* MainFlowModulePresenterTests.swift */; };
+		CB245E412B5A106700E10119 /* MainFlowModuleRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E402B5A106700E10119 /* MainFlowModuleRouterTests.swift */; };
 		CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */; };
 		CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */; };
 		CBF1E7A92B586310002D5FCD /* NetworkClientTestsMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */; };
@@ -85,6 +88,9 @@
 		CB245E322B59FF5100E10119 /* MainFlowModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowModuleBuilder.swift; sourceTree = "<group>"; };
 		CB245E342B59FF7400E10119 /* MainFlowModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowModulePresenter.swift; sourceTree = "<group>"; };
 		CB245E362B59FF8600E10119 /* MainFlowModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowModuleRouter.swift; sourceTree = "<group>"; };
+		CB245E3C2B5A0D2500E10119 /* MainFlowModuleBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowModuleBuilderTests.swift; sourceTree = "<group>"; };
+		CB245E3E2B5A0F0000E10119 /* MainFlowModulePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowModulePresenterTests.swift; sourceTree = "<group>"; };
+		CB245E402B5A106700E10119 /* MainFlowModuleRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowModuleRouterTests.swift; sourceTree = "<group>"; };
 		CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
 		CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTestsMocks.swift; sourceTree = "<group>"; };
@@ -239,6 +245,24 @@
 			path = MainFlowModule;
 			sourceTree = "<group>";
 		};
+		CB245E3A2B5A0CD100E10119 /* ModulesTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB245E3B2B5A0CE100E10119 /* MainFlowModuleTests */,
+			);
+			path = ModulesTests;
+			sourceTree = "<group>";
+		};
+		CB245E3B2B5A0CE100E10119 /* MainFlowModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB245E3C2B5A0D2500E10119 /* MainFlowModuleBuilderTests.swift */,
+				CB245E3E2B5A0F0000E10119 /* MainFlowModulePresenterTests.swift */,
+				CB245E402B5A106700E10119 /* MainFlowModuleRouterTests.swift */,
+			);
+			path = MainFlowModuleTests;
+			sourceTree = "<group>";
+		};
 		CBF1E7A52B58629A002D5FCD /* NetworkingTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +309,7 @@
 		CBFF93802B57FE64003840F2 /* SportsBook-HomeWorkTests */ = {
 			isa = PBXGroup;
 			children = (
+				CB245E3A2B5A0CD100E10119 /* ModulesTests */,
 				CBF1E7A52B58629A002D5FCD /* NetworkingTests */,
 			);
 			path = "SportsBook-HomeWorkTests";
@@ -424,13 +449,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB245E3D2B5A0D2500E10119 /* MainFlowModuleBuilderTests.swift in Sources */,
 				CB245E122B59732C00E10119 /* NetworkServiceTests.swift in Sources */,
 				CB245E052B59587E00E10119 /* NetworkRequestProtocolExtensionTests.swift in Sources */,
 				CB245E2E2B59EDFB00E10119 /* GetEventsDataRequestTests.swift in Sources */,
+				CB245E3F2B5A0F0000E10119 /* MainFlowModulePresenterTests.swift in Sources */,
 				CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */,
 				CB245E102B59721900E10119 /* GetStatusRequestTests.swift in Sources */,
 				CBF1E7A92B586310002D5FCD /* NetworkClientTestsMocks.swift in Sources */,
 				CB245E182B5983E800E10119 /* GetSportsDataRequestTests.swift in Sources */,
+				CB245E412B5A106700E10119 /* MainFlowModuleRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
