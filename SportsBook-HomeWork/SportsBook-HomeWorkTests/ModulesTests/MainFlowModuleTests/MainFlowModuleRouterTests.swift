@@ -18,7 +18,8 @@ final class MainFlowModuleRouterTests: XCTestCase {
         super.setUp()
         mockUINavigationController = .init()
         mockUIWindow = .init()
-        router = MainFlowModuleRouter(mainNavigationController: mockUINavigationController)
+        router = MainFlowModuleRouter(statusScreenBuilder: MockStatusScreenBuilderBuildable(),
+                                      mainNavigationController: mockUINavigationController)
     }
 
     override func tearDown() {
@@ -58,6 +59,12 @@ private extension MainFlowModuleRouterTests {
         var makeKeyAndVisibleCallCount = 0
         override func makeKeyAndVisible() {
             makeKeyAndVisibleCallCount += 1
+        }
+    }
+
+    final class MockStatusScreenBuilderBuildable: StatusScreenBuilderBuildable {
+        func build(handler: @escaping StatusScreenBuilderCompletionHandler) -> UIViewController {
+            return .init()
         }
     }
 }

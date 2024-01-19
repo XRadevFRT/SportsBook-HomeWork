@@ -17,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SportsBook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NT1-VU-oFL">
-                                <rect key="frame" x="59" y="239" width="275" height="60"/>
+                                <rect key="frame" x="59" y="238.66666666666663" width="275" height="60"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Radoslav Radev" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gim-Yy-rvO">
-                                <rect key="frame" x="124.66666666666669" y="789" width="144" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="123.00000000000001" y="790" width="147.33333333333337" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -33,7 +33,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="NT1-VU-oFL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Qcb-fp-THH"/>
-                            <constraint firstItem="NT1-VU-oFL" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-169.5" id="dLm-vt-O9o"/>
+                            <constraint firstItem="NT1-VU-oFL" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-170" id="dLm-vt-O9o"/>
                             <constraint firstItem="gim-Yy-rvO" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="i2f-Lb-rmK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gim-Yy-rvO" secondAttribute="bottom" constant="8" id="yTU-IN-qp8"/>
                         </constraints>
