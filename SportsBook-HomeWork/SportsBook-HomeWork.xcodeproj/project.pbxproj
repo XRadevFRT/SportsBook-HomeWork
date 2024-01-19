@@ -32,6 +32,9 @@
 		CB245E2C2B59ED6C00E10119 /* GetEventsDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E2B2B59ED6C00E10119 /* GetEventsDataRequest.swift */; };
 		CB245E2E2B59EDFB00E10119 /* GetEventsDataRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E2D2B59EDFB00E10119 /* GetEventsDataRequestTests.swift */; };
 		CB245E302B59F31E00E10119 /* NumberFormatter+OrdinalNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E2F2B59F31E00E10119 /* NumberFormatter+OrdinalNumber.swift */; };
+		CB245E332B59FF5100E10119 /* MainFlowModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E322B59FF5100E10119 /* MainFlowModuleBuilder.swift */; };
+		CB245E352B59FF7400E10119 /* MainFlowModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E342B59FF7400E10119 /* MainFlowModulePresenter.swift */; };
+		CB245E372B59FF8600E10119 /* MainFlowModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E362B59FF8600E10119 /* MainFlowModuleRouter.swift */; };
 		CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */; };
 		CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */; };
 		CBF1E7A92B586310002D5FCD /* NetworkClientTestsMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */; };
@@ -79,6 +82,9 @@
 		CB245E2B2B59ED6C00E10119 /* GetEventsDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEventsDataRequest.swift; sourceTree = "<group>"; };
 		CB245E2D2B59EDFB00E10119 /* GetEventsDataRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEventsDataRequestTests.swift; sourceTree = "<group>"; };
 		CB245E2F2B59F31E00E10119 /* NumberFormatter+OrdinalNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+OrdinalNumber.swift"; sourceTree = "<group>"; };
+		CB245E322B59FF5100E10119 /* MainFlowModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowModuleBuilder.swift; sourceTree = "<group>"; };
+		CB245E342B59FF7400E10119 /* MainFlowModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowModulePresenter.swift; sourceTree = "<group>"; };
+		CB245E362B59FF8600E10119 /* MainFlowModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowModuleRouter.swift; sourceTree = "<group>"; };
 		CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
 		CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTestsMocks.swift; sourceTree = "<group>"; };
@@ -133,6 +139,7 @@
 		CB0D360C2B581F2100D76D40 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CB245E312B59FF3100E10119 /* MainFlowModule */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -220,6 +227,16 @@
 				CB245E2D2B59EDFB00E10119 /* GetEventsDataRequestTests.swift */,
 			);
 			path = RequestsTests;
+			sourceTree = "<group>";
+		};
+		CB245E312B59FF3100E10119 /* MainFlowModule */ = {
+			isa = PBXGroup;
+			children = (
+				CB245E322B59FF5100E10119 /* MainFlowModuleBuilder.swift */,
+				CB245E342B59FF7400E10119 /* MainFlowModulePresenter.swift */,
+				CB245E362B59FF8600E10119 /* MainFlowModuleRouter.swift */,
+			);
+			path = MainFlowModule;
 			sourceTree = "<group>";
 		};
 		CBF1E7A52B58629A002D5FCD /* NetworkingTests */ = {
@@ -379,9 +396,11 @@
 				CB245DF42B58994200E10119 /* HTTPMethods.swift in Sources */,
 				CB245E202B59976B00E10119 /* Runner.swift in Sources */,
 				CB245DFC2B589A7300E10119 /* URL+Validation.swift in Sources */,
+				CB245E372B59FF8600E10119 /* MainFlowModuleRouter.swift in Sources */,
 				CB245E242B5997A100E10119 /* MarketType.swift in Sources */,
 				CB245E1C2B59972600E10119 /* Event.swift in Sources */,
 				CB245DFA2B5899FE00E10119 /* NetworkClientProtocol.swift in Sources */,
+				CB245E332B59FF5100E10119 /* MainFlowModuleBuilder.swift in Sources */,
 				CB245E1E2B59975400E10119 /* PrimaryMarket.swift in Sources */,
 				CB245E142B59829E00E10119 /* SportsData.swift in Sources */,
 				CB245E282B59CF5400E10119 /* DateFormatter+iso8601.swift in Sources */,
@@ -393,6 +412,7 @@
 				CBFF936D2B57FE62003840F2 /* SceneDelegate.swift in Sources */,
 				CB245E082B596D1800E10119 /* GetStatusRequest.swift in Sources */,
 				CB245E0D2B596E4700E10119 /* APIStatus.swift in Sources */,
+				CB245E352B59FF7400E10119 /* MainFlowModulePresenter.swift in Sources */,
 				CB245DF82B5899DD00E10119 /* NetworkRequestProtocol.swift in Sources */,
 				CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */,
 				CB245DF62B5899BC00E10119 /* NetworkErrors.swift in Sources */,
