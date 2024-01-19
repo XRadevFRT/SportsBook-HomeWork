@@ -80,7 +80,10 @@ final class NetworkClient: NetworkClientProtocol {
     func decodeResponse<T: Decodable>(data: Data,
                                       completion: @escaping (Result<T, NetworkError>) -> Void) {
         do {
-            let decodedModel = try JSONDecoder().decode(T.self, from: data)
+            let decoder = JSONDecoder()
+            decoder.dateDecodingStrategy = .formatted(DateFormatter.iso8601Full)
+
+            let decodedModel = try decoder.decode(T.self, from: data)
             completion(.success(decodedModel))
         } catch {
             completion(.failure(.decodingFailed))
