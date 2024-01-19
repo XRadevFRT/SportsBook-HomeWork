@@ -51,6 +51,20 @@ final class NetworkServiceTests: XCTestCase {
         XCTAssertEqual(mockNetworkClient.sendRequestCallCount, 1)
         XCTAssert(mockNetworkClient.sendRequest is GetSportsDataRequest)
     }
+
+    func testGetEventsData() {
+        let expectation = XCTestExpectation(description: "Get SportsData completion called")
+
+        networkService.getEventsData(sportId: 1) { _ in
+            expectation.fulfill()
+        }
+
+        // Wait for the expectation to be fulfilled
+        wait(for: [expectation], timeout: 5.0)
+
+        XCTAssertEqual(mockNetworkClient.sendRequestCallCount, 1)
+        XCTAssert(mockNetworkClient.sendRequest is GetEventsDataRequest)
+    }
 }
 
 private extension NetworkServiceTests {

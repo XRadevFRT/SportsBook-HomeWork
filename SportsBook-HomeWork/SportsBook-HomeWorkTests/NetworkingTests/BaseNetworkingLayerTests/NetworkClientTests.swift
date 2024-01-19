@@ -241,4 +241,44 @@ final class NetworkClientTests: XCTestCase {
 
         wait(for: [expectation], timeout: 5.0)
     }
+
+    func testDecodingWithValidDate() {
+        let exampleDate = "2024-01-24T23:00:00Z"
+        let jsonString = """
+            {
+                "someKey": "exampleValue",
+                "dateKey": "\(exampleDate)"
+            }
+            """
+
+        let jsonData = jsonString.data(using: .utf8)!
+        MockURLProtocol.mockResponseData = jsonData
+        let mockRequest = MockRequest()
+
+        // Act
+        let expectation = XCTestExpectation(description: "Decoding completion called")
+        networkClient.sendRequest(mockRequest) { (result: Result<MockDecodableModel, NetworkError>) in
+            // Assert
+            switch result {
+            case .success(let model):
+                XCTAssertNotNil(model.dateKey)
+                XCTAssertEqual(model.dateKey, self.expectedDate(exampleDate))
+            case .failure(let error):
+                XCTFail("Unexpected error: \(error)")
+            }
+            expectation.fulfill()
+        }
+
+        wait(for: [expectation], timeout: 1.0)
+    }
+
+    // Helpers
+    private func expectedDate(_ stringDate: String) -> Date {
+        let dateFormatter = DateFormatter.iso8601Full
+        guard let expectedDate = dateFormatter.date(from: stringDate) else {
+            XCTFail("Passed string date cannot be parsed to Date")
+            return Date()
+        }
+        return expectedDate
+    }
 }
