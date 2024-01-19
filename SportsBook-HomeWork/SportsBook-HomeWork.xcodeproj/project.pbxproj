@@ -50,6 +50,7 @@
 		CB245E5A2B5A854800E10119 /* StatusScreenRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E592B5A854800E10119 /* StatusScreenRouterTests.swift */; };
 		CB245E5D2B5A93D900E10119 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = CB245E5C2B5A93D900E10119 /* SnapshotTesting */; };
 		CB245E5F2B5A93F700E10119 /* StatusScreenViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E5E2B5A93F700E10119 /* StatusScreenViewControllerSnapshotTests.swift */; };
+		CB245E612B5AAA5D00E10119 /* BaseSportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E602B5AAA5D00E10119 /* BaseSportView.swift */; };
 		CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */; };
 		CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */; };
 		CBF1E7A92B586310002D5FCD /* NetworkClientTestsMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */; };
@@ -113,6 +114,7 @@
 		CB245E572B5A805600E10119 /* StatusScreenInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusScreenInteractorTests.swift; sourceTree = "<group>"; };
 		CB245E592B5A854800E10119 /* StatusScreenRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusScreenRouterTests.swift; sourceTree = "<group>"; };
 		CB245E5E2B5A93F700E10119 /* StatusScreenViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusScreenViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
+		CB245E602B5AAA5D00E10119 /* BaseSportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSportView.swift; sourceTree = "<group>"; };
 		CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
 		CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTestsMocks.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 		CB0D360E2B581F3600D76D40 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				CB245E602B5AAA5D00E10119 /* BaseSportView.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 				CBFF936B2B57FE62003840F2 /* AppDelegate.swift in Sources */,
 				CBFF936D2B57FE62003840F2 /* SceneDelegate.swift in Sources */,
 				CB245E4C2B5A160700E10119 /* StatusScreenInteractor.swift in Sources */,
+				CB245E612B5AAA5D00E10119 /* BaseSportView.swift in Sources */,
 				CB245E082B596D1800E10119 /* GetStatusRequest.swift in Sources */,
 				CB245E4E2B5A160E00E10119 /* StatusScreenRouter.swift in Sources */,
 				CB245E0D2B596E4700E10119 /* APIStatus.swift in Sources */,
