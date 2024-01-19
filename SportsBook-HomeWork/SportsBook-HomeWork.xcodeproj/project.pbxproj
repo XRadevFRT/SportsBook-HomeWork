@@ -54,6 +54,8 @@
 		CB245E642B5AB13F00E10119 /* BaseSportViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E632B5AB13F00E10119 /* BaseSportViewSnapshotTests.swift */; };
 		CB245E662B5AB38F00E10119 /* SnapshotSupportContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E652B5AB38F00E10119 /* SnapshotSupportContainer.swift */; };
 		CB245E682B5ABA0100E10119 /* GenericTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E672B5ABA0100E10119 /* GenericTableViewCell.swift */; };
+		CB245E6C2B5ACFAF00E10119 /* UITableVIew+registerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E6B2B5ACFAF00E10119 /* UITableVIew+registerCell.swift */; };
+		CB245E6E2B5AD06C00E10119 /* UITableView+dequeuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E6D2B5AD06C00E10119 /* UITableView+dequeuCell.swift */; };
 		CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */; };
 		CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */; };
 		CBF1E7A92B586310002D5FCD /* NetworkClientTestsMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */; };
@@ -121,6 +123,8 @@
 		CB245E632B5AB13F00E10119 /* BaseSportViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSportViewSnapshotTests.swift; sourceTree = "<group>"; };
 		CB245E652B5AB38F00E10119 /* SnapshotSupportContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotSupportContainer.swift; sourceTree = "<group>"; };
 		CB245E672B5ABA0100E10119 /* GenericTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewCell.swift; sourceTree = "<group>"; };
+		CB245E6B2B5ACFAF00E10119 /* UITableVIew+registerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableVIew+registerCell.swift"; sourceTree = "<group>"; };
+		CB245E6D2B5AD06C00E10119 /* UITableView+dequeuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+dequeuCell.swift"; sourceTree = "<group>"; };
 		CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
 		CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTestsMocks.swift; sourceTree = "<group>"; };
@@ -206,6 +210,8 @@
 				CB245E272B59CF5400E10119 /* DateFormatter+iso8601.swift */,
 				CB245E292B59D19500E10119 /* Date+FormattedString.swift */,
 				CB245E2F2B59F31E00E10119 /* NumberFormatter+OrdinalNumber.swift */,
+				CB245E6B2B5ACFAF00E10119 /* UITableVIew+registerCell.swift */,
+				CB245E6D2B5AD06C00E10119 /* UITableView+dequeuCell.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -512,6 +518,7 @@
 				CB245E1C2B59972600E10119 /* Event.swift in Sources */,
 				CB245DFA2B5899FE00E10119 /* NetworkClientProtocol.swift in Sources */,
 				CB245E332B59FF5100E10119 /* MainFlowModuleBuilder.swift in Sources */,
+				CB245E6C2B5ACFAF00E10119 /* UITableVIew+registerCell.swift in Sources */,
 				CB245E1E2B59975400E10119 /* PrimaryMarket.swift in Sources */,
 				CB245E142B59829E00E10119 /* SportsData.swift in Sources */,
 				CB245E282B59CF5400E10119 /* DateFormatter+iso8601.swift in Sources */,
@@ -531,6 +538,7 @@
 				CB245DF82B5899DD00E10119 /* NetworkRequestProtocol.swift in Sources */,
 				CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */,
 				CB245DF62B5899BC00E10119 /* NetworkErrors.swift in Sources */,
+				CB245E6E2B5AD06C00E10119 /* UITableView+dequeuCell.swift in Sources */,
 				CB245E2A2B59D19500E10119 /* Date+FormattedString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
