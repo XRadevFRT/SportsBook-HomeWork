@@ -26,7 +26,6 @@ extension MainFlowModuleDependencyContainer: StatusScreenBuilderDependency {
     var getStatusService: GetStatusServiceProtocol {
         networkService
     }
-    
 
 }
 
