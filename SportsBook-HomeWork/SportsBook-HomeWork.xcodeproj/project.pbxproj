@@ -44,13 +44,17 @@
 		CB245E4C2B5A160700E10119 /* StatusScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E4B2B5A160700E10119 /* StatusScreenInteractor.swift */; };
 		CB245E4E2B5A160E00E10119 /* StatusScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E4D2B5A160E00E10119 /* StatusScreenRouter.swift */; };
 		CB245E512B5A208C00E10119 /* Activable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E502B5A208C00E10119 /* Activable.swift */; };
+		CB245E542B5A707A00E10119 /* StatusScreenBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E532B5A707A00E10119 /* StatusScreenBuilderTests.swift */; };
+		CB245E562B5A7CD000E10119 /* StatusScreenPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E552B5A7CD000E10119 /* StatusScreenPresenterTests.swift */; };
+		CB245E582B5A805600E10119 /* StatusScreenInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E572B5A805600E10119 /* StatusScreenInteractorTests.swift */; };
+		CB245E5A2B5A854800E10119 /* StatusScreenRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E592B5A854800E10119 /* StatusScreenRouterTests.swift */; };
 		CB245E5D2B5A93D900E10119 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = CB245E5C2B5A93D900E10119 /* SnapshotTesting */; };
+		CB245E5F2B5A93F700E10119 /* StatusScreenViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E5E2B5A93F700E10119 /* StatusScreenViewControllerSnapshotTests.swift */; };
 		CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */; };
 		CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */; };
 		CBF1E7A92B586310002D5FCD /* NetworkClientTestsMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */; };
 		CBFF936B2B57FE62003840F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF936A2B57FE62003840F2 /* AppDelegate.swift */; };
 		CBFF936D2B57FE62003840F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF936C2B57FE62003840F2 /* SceneDelegate.swift */; };
-		CBFF936F2B57FE62003840F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF936E2B57FE62003840F2 /* ViewController.swift */; };
 		CBFF93742B57FE64003840F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBFF93732B57FE64003840F2 /* Assets.xcassets */; };
 		CBFF93772B57FE64003840F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBFF93752B57FE64003840F2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -104,13 +108,17 @@
 		CB245E4B2B5A160700E10119 /* StatusScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusScreenInteractor.swift; sourceTree = "<group>"; };
 		CB245E4D2B5A160E00E10119 /* StatusScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusScreenRouter.swift; sourceTree = "<group>"; };
 		CB245E502B5A208C00E10119 /* Activable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activable.swift; sourceTree = "<group>"; };
+		CB245E532B5A707A00E10119 /* StatusScreenBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusScreenBuilderTests.swift; sourceTree = "<group>"; };
+		CB245E552B5A7CD000E10119 /* StatusScreenPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusScreenPresenterTests.swift; sourceTree = "<group>"; };
+		CB245E572B5A805600E10119 /* StatusScreenInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusScreenInteractorTests.swift; sourceTree = "<group>"; };
+		CB245E592B5A854800E10119 /* StatusScreenRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusScreenRouterTests.swift; sourceTree = "<group>"; };
+		CB245E5E2B5A93F700E10119 /* StatusScreenViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusScreenViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
 		CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
 		CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTestsMocks.swift; sourceTree = "<group>"; };
 		CBFF93672B57FE62003840F2 /* SportsBook-HomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SportsBook-HomeWork.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBFF936A2B57FE62003840F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBFF936C2B57FE62003840F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CBFF936E2B57FE62003840F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CBFF93732B57FE64003840F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBFF93762B57FE64003840F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBFF93782B57FE64003840F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -263,6 +271,7 @@
 		CB245E3A2B5A0CD100E10119 /* ModulesTests */ = {
 			isa = PBXGroup;
 			children = (
+				CB245E522B5A704F00E10119 /* StatusScreenTests */,
 				CB245E3B2B5A0CE100E10119 /* MainFlowModuleTests */,
 			);
 			path = ModulesTests;
@@ -298,6 +307,18 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		CB245E522B5A704F00E10119 /* StatusScreenTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB245E532B5A707A00E10119 /* StatusScreenBuilderTests.swift */,
+				CB245E552B5A7CD000E10119 /* StatusScreenPresenterTests.swift */,
+				CB245E572B5A805600E10119 /* StatusScreenInteractorTests.swift */,
+				CB245E592B5A854800E10119 /* StatusScreenRouterTests.swift */,
+				CB245E5E2B5A93F700E10119 /* StatusScreenViewControllerSnapshotTests.swift */,
+			);
+			path = StatusScreenTests;
+			sourceTree = "<group>";
+		};
 		CBF1E7A52B58629A002D5FCD /* NetworkingTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,7 +351,6 @@
 		CBFF93692B57FE62003840F2 /* SportsBook-HomeWork */ = {
 			isa = PBXGroup;
 			children = (
-				CBFF936E2B57FE62003840F2 /* ViewController.swift */,
 				CB0D360B2B581F0E00D76D40 /* App */,
 				CB0D360C2B581F2100D76D40 /* Modules */,
 				CB245E0B2B596E2A00E10119 /* Models */,
@@ -476,7 +496,6 @@
 				CB245E282B59CF5400E10119 /* DateFormatter+iso8601.swift in Sources */,
 				CB245E262B59983E00E10119 /* EventsData.swift in Sources */,
 				CB245E222B59978900E10119 /* Odds.swift in Sources */,
-				CBFF936F2B57FE62003840F2 /* ViewController.swift in Sources */,
 				CB245E2C2B59ED6C00E10119 /* GetEventsDataRequest.swift in Sources */,
 				CBFF936B2B57FE62003840F2 /* AppDelegate.swift in Sources */,
 				CBFF936D2B57FE62003840F2 /* SceneDelegate.swift in Sources */,
@@ -497,13 +516,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB245E542B5A707A00E10119 /* StatusScreenBuilderTests.swift in Sources */,
 				CB245E3D2B5A0D2500E10119 /* MainFlowModuleBuilderTests.swift in Sources */,
 				CB245E122B59732C00E10119 /* NetworkServiceTests.swift in Sources */,
 				CB245E052B59587E00E10119 /* NetworkRequestProtocolExtensionTests.swift in Sources */,
+				CB245E582B5A805600E10119 /* StatusScreenInteractorTests.swift in Sources */,
 				CB245E2E2B59EDFB00E10119 /* GetEventsDataRequestTests.swift in Sources */,
+				CB245E5A2B5A854800E10119 /* StatusScreenRouterTests.swift in Sources */,
 				CB245E3F2B5A0F0000E10119 /* MainFlowModulePresenterTests.swift in Sources */,
+				CB245E5F2B5A93F700E10119 /* StatusScreenViewControllerSnapshotTests.swift in Sources */,
 				CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */,
 				CB245E102B59721900E10119 /* GetStatusRequestTests.swift in Sources */,
+				CB245E562B5A7CD000E10119 /* StatusScreenPresenterTests.swift in Sources */,
 				CBF1E7A92B586310002D5FCD /* NetworkClientTestsMocks.swift in Sources */,
 				CB245E182B5983E800E10119 /* GetSportsDataRequestTests.swift in Sources */,
 				CB245E412B5A106700E10119 /* MainFlowModuleRouterTests.swift in Sources */,

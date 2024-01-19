@@ -36,8 +36,8 @@ extension StatusScreenRouter: StatusScreenRouterInput {
         let retryAction = UIAlertAction(
             title: retryActionTitle,
             style: .default,
-            handler: { [weak output] _ in
-                output?.didPressRetry()
+            handler: { [weak self] _ in
+                self?.handleRetryAction()
             })
 
         alertViewController.addAction(retryAction)
@@ -45,5 +45,9 @@ extension StatusScreenRouter: StatusScreenRouterInput {
         DispatchQueue.main.async { [weak self] in
             self?.presentingViewController.present(alertViewController, animated: true, completion: nil)
         }
+    }
+
+    func handleRetryAction() {
+        output?.didPressRetry()
     }
 }
