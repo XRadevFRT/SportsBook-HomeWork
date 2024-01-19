@@ -21,6 +21,12 @@
 		CB245E142B59829E00E10119 /* SportsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E132B59829E00E10119 /* SportsData.swift */; };
 		CB245E162B59838F00E10119 /* GetSportsDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E152B59838F00E10119 /* GetSportsDataRequest.swift */; };
 		CB245E182B5983E800E10119 /* GetSportsDataRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E172B5983E800E10119 /* GetSportsDataRequestTests.swift */; };
+		CB245E1C2B59972600E10119 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E1B2B59972600E10119 /* Event.swift */; };
+		CB245E1E2B59975400E10119 /* PrimaryMarket.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E1D2B59975400E10119 /* PrimaryMarket.swift */; };
+		CB245E202B59976B00E10119 /* Runner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E1F2B59976B00E10119 /* Runner.swift */; };
+		CB245E222B59978900E10119 /* Odds.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E212B59978900E10119 /* Odds.swift */; };
+		CB245E242B5997A100E10119 /* MarketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E232B5997A100E10119 /* MarketType.swift */; };
+		CB245E262B59983E00E10119 /* EventsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E252B59983E00E10119 /* EventsData.swift */; };
 		CB245E282B59CF5400E10119 /* DateFormatter+iso8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E272B59CF5400E10119 /* DateFormatter+iso8601.swift */; };
 		CB245E2A2B59D19500E10119 /* Date+FormattedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E292B59D19500E10119 /* Date+FormattedString.swift */; };
 		CB245E302B59F31E00E10119 /* NumberFormatter+OrdinalNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E2F2B59F31E00E10119 /* NumberFormatter+OrdinalNumber.swift */; };
@@ -60,6 +66,12 @@
 		CB245E132B59829E00E10119 /* SportsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsData.swift; sourceTree = "<group>"; };
 		CB245E152B59838F00E10119 /* GetSportsDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSportsDataRequest.swift; sourceTree = "<group>"; };
 		CB245E172B5983E800E10119 /* GetSportsDataRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSportsDataRequestTests.swift; sourceTree = "<group>"; };
+		CB245E1B2B59972600E10119 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		CB245E1D2B59975400E10119 /* PrimaryMarket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryMarket.swift; sourceTree = "<group>"; };
+		CB245E1F2B59976B00E10119 /* Runner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runner.swift; sourceTree = "<group>"; };
+		CB245E212B59978900E10119 /* Odds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Odds.swift; sourceTree = "<group>"; };
+		CB245E232B5997A100E10119 /* MarketType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketType.swift; sourceTree = "<group>"; };
+		CB245E252B59983E00E10119 /* EventsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsData.swift; sourceTree = "<group>"; };
 		CB245E272B59CF5400E10119 /* DateFormatter+iso8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+iso8601.swift"; sourceTree = "<group>"; };
 		CB245E292B59D19500E10119 /* Date+FormattedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+FormattedString.swift"; sourceTree = "<group>"; };
 		CB245E2F2B59F31E00E10119 /* NumberFormatter+OrdinalNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+OrdinalNumber.swift"; sourceTree = "<group>"; };
@@ -185,6 +197,12 @@
 			children = (
 				CB245E0C2B596E4700E10119 /* APIStatus.swift */,
 				CB245E132B59829E00E10119 /* SportsData.swift */,
+				CB245E252B59983E00E10119 /* EventsData.swift */,
+				CB245E1B2B59972600E10119 /* Event.swift */,
+				CB245E1D2B59975400E10119 /* PrimaryMarket.swift */,
+				CB245E1F2B59976B00E10119 /* Runner.swift */,
+				CB245E212B59978900E10119 /* Odds.swift */,
+				CB245E232B5997A100E10119 /* MarketType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -353,10 +371,16 @@
 				CB245E0A2B596DFE00E10119 /* NetworkService.swift in Sources */,
 				CB245E162B59838F00E10119 /* GetSportsDataRequest.swift in Sources */,
 				CB245DF42B58994200E10119 /* HTTPMethods.swift in Sources */,
+				CB245E202B59976B00E10119 /* Runner.swift in Sources */,
 				CB245DFC2B589A7300E10119 /* URL+Validation.swift in Sources */,
+				CB245E242B5997A100E10119 /* MarketType.swift in Sources */,
+				CB245E1C2B59972600E10119 /* Event.swift in Sources */,
 				CB245DFA2B5899FE00E10119 /* NetworkClientProtocol.swift in Sources */,
+				CB245E1E2B59975400E10119 /* PrimaryMarket.swift in Sources */,
 				CB245E142B59829E00E10119 /* SportsData.swift in Sources */,
 				CB245E282B59CF5400E10119 /* DateFormatter+iso8601.swift in Sources */,
+				CB245E262B59983E00E10119 /* EventsData.swift in Sources */,
+				CB245E222B59978900E10119 /* Odds.swift in Sources */,
 				CBFF936F2B57FE62003840F2 /* ViewController.swift in Sources */,
 				CBFF936B2B57FE62003840F2 /* AppDelegate.swift in Sources */,
 				CBFF936D2B57FE62003840F2 /* SceneDelegate.swift in Sources */,
