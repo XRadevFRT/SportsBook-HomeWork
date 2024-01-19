@@ -27,3 +27,9 @@ extension MainFlowModulePresenter: MainFlowModuleInput {
         router.showInitialScreen(from: window)
     }
 }
+
+extension MainFlowModulePresenter: MainFlowRouterOutput {
+    func statusScreenFinished() {
+        // show sports screen
+    }
+}
