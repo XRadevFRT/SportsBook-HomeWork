@@ -29,6 +29,7 @@
 		CB245E262B59983E00E10119 /* EventsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E252B59983E00E10119 /* EventsData.swift */; };
 		CB245E282B59CF5400E10119 /* DateFormatter+iso8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E272B59CF5400E10119 /* DateFormatter+iso8601.swift */; };
 		CB245E2A2B59D19500E10119 /* Date+FormattedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E292B59D19500E10119 /* Date+FormattedString.swift */; };
+		CB245E2C2B59ED6C00E10119 /* GetEventsDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E2B2B59ED6C00E10119 /* GetEventsDataRequest.swift */; };
 		CB245E302B59F31E00E10119 /* NumberFormatter+OrdinalNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E2F2B59F31E00E10119 /* NumberFormatter+OrdinalNumber.swift */; };
 		CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */; };
 		CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */; };
@@ -74,6 +75,7 @@
 		CB245E252B59983E00E10119 /* EventsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsData.swift; sourceTree = "<group>"; };
 		CB245E272B59CF5400E10119 /* DateFormatter+iso8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+iso8601.swift"; sourceTree = "<group>"; };
 		CB245E292B59D19500E10119 /* Date+FormattedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+FormattedString.swift"; sourceTree = "<group>"; };
+		CB245E2B2B59ED6C00E10119 /* GetEventsDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEventsDataRequest.swift; sourceTree = "<group>"; };
 		CB245E2F2B59F31E00E10119 /* NumberFormatter+OrdinalNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+OrdinalNumber.swift"; sourceTree = "<group>"; };
 		CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			children = (
 				CB245E072B596D1800E10119 /* GetStatusRequest.swift */,
 				CB245E152B59838F00E10119 /* GetSportsDataRequest.swift */,
+				CB245E2B2B59ED6C00E10119 /* GetEventsDataRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				CB245E262B59983E00E10119 /* EventsData.swift in Sources */,
 				CB245E222B59978900E10119 /* Odds.swift in Sources */,
 				CBFF936F2B57FE62003840F2 /* ViewController.swift in Sources */,
+				CB245E2C2B59ED6C00E10119 /* GetEventsDataRequest.swift in Sources */,
 				CBFF936B2B57FE62003840F2 /* AppDelegate.swift in Sources */,
 				CBFF936D2B57FE62003840F2 /* SceneDelegate.swift in Sources */,
 				CB245E082B596D1800E10119 /* GetStatusRequest.swift in Sources */,

@@ -10,6 +10,7 @@ import Foundation
 
 typealias GetStatusCompletion = (Result<APIStatus, NetworkError>) -> Void
 typealias GetSportsDataCompletion = (Result<SportsData, NetworkError>) -> Void
+typealias GetEventsDataCompletion = (Result<EventsData, NetworkError>) -> Void
 
 protocol HasGetStatusService {
     func getStatus(completion: @escaping GetStatusCompletion)
@@ -17,6 +18,10 @@ protocol HasGetStatusService {
 
 protocol HasGetSportsDataService {
     func getSportsData(completion: @escaping GetSportsDataCompletion)
+}
+
+protocol HasGetEventsDataService {
+    func getEventsData(sportId: Int, completion: @escaping GetEventsDataCompletion)
 }
 
 final class NetworkService {
@@ -40,5 +45,13 @@ extension NetworkService: HasGetSportsDataService {
     func getSportsData(completion: @escaping GetSportsDataCompletion) {
         let getSportsDataRequest = GetSportsDataRequest()
         networkClient.sendRequest(getSportsDataRequest, completion: completion)
+    }
+}
+
+// MARK: - HasGetEventsDataService
+extension NetworkService: HasGetEventsDataService {
+    func getEventsData(sportId: Int, completion: @escaping GetEventsDataCompletion) {
+        let getEventsDataRequest = GetEventsDataRequest(sportId: sportId)
+        networkClient.sendRequest(getEventsDataRequest, completion: completion)
     }
 }
