@@ -15,6 +15,7 @@ class BaseSportView: UIView {
         let label = UILabel()
         label.numberOfLines = 1
         label.textAlignment = .left
+        label.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -78,16 +79,16 @@ private extension BaseSportView {
     var titleLabelConstraints: [NSLayoutConstraint] {
         [
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
-            titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 16),
-            titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16)
+            titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 10),
+            titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10)
         ]
     }
 
     var chevronImageViewConstraints: [NSLayoutConstraint] {
         [
             chevronImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            chevronImageView.topAnchor.constraint(equalTo: topAnchor, constant: 16),
-            chevronImageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16)
+            chevronImageView.topAnchor.constraint(equalTo: topAnchor, constant: 10),
+            chevronImageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10)
         ]
     }
 }
