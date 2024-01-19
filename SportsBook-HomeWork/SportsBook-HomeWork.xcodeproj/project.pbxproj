@@ -38,6 +38,11 @@
 		CB245E3D2B5A0D2500E10119 /* MainFlowModuleBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E3C2B5A0D2500E10119 /* MainFlowModuleBuilderTests.swift */; };
 		CB245E3F2B5A0F0000E10119 /* MainFlowModulePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E3E2B5A0F0000E10119 /* MainFlowModulePresenterTests.swift */; };
 		CB245E412B5A106700E10119 /* MainFlowModuleRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E402B5A106700E10119 /* MainFlowModuleRouterTests.swift */; };
+		CB245E462B5A157000E10119 /* StatusScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E452B5A157000E10119 /* StatusScreenBuilder.swift */; };
+		CB245E482B5A15D600E10119 /* StatusScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E472B5A15D600E10119 /* StatusScreenViewController.swift */; };
+		CB245E4A2B5A15FB00E10119 /* StatusScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E492B5A15FB00E10119 /* StatusScreenPresenter.swift */; };
+		CB245E4C2B5A160700E10119 /* StatusScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E4B2B5A160700E10119 /* StatusScreenInteractor.swift */; };
+		CB245E4E2B5A160E00E10119 /* StatusScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E4D2B5A160E00E10119 /* StatusScreenRouter.swift */; };
 		CB245E512B5A208C00E10119 /* Activable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E502B5A208C00E10119 /* Activable.swift */; };
 		CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */; };
 		CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */; };
@@ -92,6 +97,11 @@
 		CB245E3C2B5A0D2500E10119 /* MainFlowModuleBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowModuleBuilderTests.swift; sourceTree = "<group>"; };
 		CB245E3E2B5A0F0000E10119 /* MainFlowModulePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowModulePresenterTests.swift; sourceTree = "<group>"; };
 		CB245E402B5A106700E10119 /* MainFlowModuleRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowModuleRouterTests.swift; sourceTree = "<group>"; };
+		CB245E452B5A157000E10119 /* StatusScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusScreenBuilder.swift; sourceTree = "<group>"; };
+		CB245E472B5A15D600E10119 /* StatusScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusScreenViewController.swift; sourceTree = "<group>"; };
+		CB245E492B5A15FB00E10119 /* StatusScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusScreenPresenter.swift; sourceTree = "<group>"; };
+		CB245E4B2B5A160700E10119 /* StatusScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusScreenInteractor.swift; sourceTree = "<group>"; };
+		CB245E4D2B5A160E00E10119 /* StatusScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusScreenRouter.swift; sourceTree = "<group>"; };
 		CB245E502B5A208C00E10119 /* Activable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activable.swift; sourceTree = "<group>"; };
 		CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
@@ -147,6 +157,7 @@
 		CB0D360C2B581F2100D76D40 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CB245E432B5A153500E10119 /* StatusScreen */,
 				CB245E312B59FF3100E10119 /* MainFlowModule */,
 			);
 			path = Modules;
@@ -263,6 +274,18 @@
 				CB245E402B5A106700E10119 /* MainFlowModuleRouterTests.swift */,
 			);
 			path = MainFlowModuleTests;
+			sourceTree = "<group>";
+		};
+		CB245E432B5A153500E10119 /* StatusScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CB245E452B5A157000E10119 /* StatusScreenBuilder.swift */,
+				CB245E472B5A15D600E10119 /* StatusScreenViewController.swift */,
+				CB245E492B5A15FB00E10119 /* StatusScreenPresenter.swift */,
+				CB245E4B2B5A160700E10119 /* StatusScreenInteractor.swift */,
+				CB245E4D2B5A160E00E10119 /* StatusScreenRouter.swift */,
+			);
+			path = StatusScreen;
 			sourceTree = "<group>";
 		};
 		CB245E4F2B5A205000E10119 /* Utilities */ = {
@@ -426,11 +449,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB245E4A2B5A15FB00E10119 /* StatusScreenPresenter.swift in Sources */,
 				CB245E302B59F31E00E10119 /* NumberFormatter+OrdinalNumber.swift in Sources */,
 				CB245E0A2B596DFE00E10119 /* NetworkService.swift in Sources */,
 				CB245E162B59838F00E10119 /* GetSportsDataRequest.swift in Sources */,
 				CB245DF42B58994200E10119 /* HTTPMethods.swift in Sources */,
 				CB245E202B59976B00E10119 /* Runner.swift in Sources */,
+				CB245E482B5A15D600E10119 /* StatusScreenViewController.swift in Sources */,
 				CB245E512B5A208C00E10119 /* Activable.swift in Sources */,
 				CB245DFC2B589A7300E10119 /* URL+Validation.swift in Sources */,
 				CB245E372B59FF8600E10119 /* MainFlowModuleRouter.swift in Sources */,
@@ -447,9 +472,12 @@
 				CB245E2C2B59ED6C00E10119 /* GetEventsDataRequest.swift in Sources */,
 				CBFF936B2B57FE62003840F2 /* AppDelegate.swift in Sources */,
 				CBFF936D2B57FE62003840F2 /* SceneDelegate.swift in Sources */,
+				CB245E4C2B5A160700E10119 /* StatusScreenInteractor.swift in Sources */,
 				CB245E082B596D1800E10119 /* GetStatusRequest.swift in Sources */,
+				CB245E4E2B5A160E00E10119 /* StatusScreenRouter.swift in Sources */,
 				CB245E0D2B596E4700E10119 /* APIStatus.swift in Sources */,
 				CB245E352B59FF7400E10119 /* MainFlowModulePresenter.swift in Sources */,
+				CB245E462B5A157000E10119 /* StatusScreenBuilder.swift in Sources */,
 				CB245DF82B5899DD00E10119 /* NetworkRequestProtocol.swift in Sources */,
 				CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */,
 				CB245DF62B5899BC00E10119 /* NetworkErrors.swift in Sources */,
