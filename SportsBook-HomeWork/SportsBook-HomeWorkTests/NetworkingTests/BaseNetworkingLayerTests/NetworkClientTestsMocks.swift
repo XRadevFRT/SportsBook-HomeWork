@@ -83,5 +83,6 @@ extension NetworkClientTests {
 
     struct MockDecodableModel: Decodable {
         let someKey: String
+        var dateKey: Date?
     }
 }
