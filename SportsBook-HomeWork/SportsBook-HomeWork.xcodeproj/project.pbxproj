@@ -21,6 +21,9 @@
 		CB245E142B59829E00E10119 /* SportsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E132B59829E00E10119 /* SportsData.swift */; };
 		CB245E162B59838F00E10119 /* GetSportsDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E152B59838F00E10119 /* GetSportsDataRequest.swift */; };
 		CB245E182B5983E800E10119 /* GetSportsDataRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E172B5983E800E10119 /* GetSportsDataRequestTests.swift */; };
+		CB245E282B59CF5400E10119 /* DateFormatter+iso8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E272B59CF5400E10119 /* DateFormatter+iso8601.swift */; };
+		CB245E2A2B59D19500E10119 /* Date+FormattedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E292B59D19500E10119 /* Date+FormattedString.swift */; };
+		CB245E302B59F31E00E10119 /* NumberFormatter+OrdinalNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E2F2B59F31E00E10119 /* NumberFormatter+OrdinalNumber.swift */; };
 		CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */; };
 		CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */; };
 		CBF1E7A92B586310002D5FCD /* NetworkClientTestsMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */; };
@@ -57,6 +60,9 @@
 		CB245E132B59829E00E10119 /* SportsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsData.swift; sourceTree = "<group>"; };
 		CB245E152B59838F00E10119 /* GetSportsDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSportsDataRequest.swift; sourceTree = "<group>"; };
 		CB245E172B5983E800E10119 /* GetSportsDataRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSportsDataRequestTests.swift; sourceTree = "<group>"; };
+		CB245E272B59CF5400E10119 /* DateFormatter+iso8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+iso8601.swift"; sourceTree = "<group>"; };
+		CB245E292B59D19500E10119 /* Date+FormattedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+FormattedString.swift"; sourceTree = "<group>"; };
+		CB245E2F2B59F31E00E10119 /* NumberFormatter+OrdinalNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+OrdinalNumber.swift"; sourceTree = "<group>"; };
 		CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
 		CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTestsMocks.swift; sourceTree = "<group>"; };
@@ -132,12 +138,15 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		CB0D36122B581F9900D76D40 /* Helpers */ = {
+		CB0D36122B581F9900D76D40 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				CB245DFB2B589A7300E10119 /* URL+Validation.swift */,
+				CB245E272B59CF5400E10119 /* DateFormatter+iso8601.swift */,
+				CB245E292B59D19500E10119 /* Date+FormattedString.swift */,
+				CB245E2F2B59F31E00E10119 /* NumberFormatter+OrdinalNumber.swift */,
 			);
-			path = Helpers;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		CB245DFD2B589B0100E10119 /* BaseNetworkingLayer */ = {
@@ -227,7 +236,7 @@
 				CB245E0B2B596E2A00E10119 /* Models */,
 				CB0D360E2B581F3600D76D40 /* UIComponents */,
 				CB0D36102B581F5400D76D40 /* Networking */,
-				CB0D36122B581F9900D76D40 /* Helpers */,
+				CB0D36122B581F9900D76D40 /* Extensions */,
 			);
 			path = "SportsBook-HomeWork";
 			sourceTree = "<group>";
@@ -340,12 +349,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB245E302B59F31E00E10119 /* NumberFormatter+OrdinalNumber.swift in Sources */,
 				CB245E0A2B596DFE00E10119 /* NetworkService.swift in Sources */,
 				CB245E162B59838F00E10119 /* GetSportsDataRequest.swift in Sources */,
 				CB245DF42B58994200E10119 /* HTTPMethods.swift in Sources */,
 				CB245DFC2B589A7300E10119 /* URL+Validation.swift in Sources */,
 				CB245DFA2B5899FE00E10119 /* NetworkClientProtocol.swift in Sources */,
 				CB245E142B59829E00E10119 /* SportsData.swift in Sources */,
+				CB245E282B59CF5400E10119 /* DateFormatter+iso8601.swift in Sources */,
 				CBFF936F2B57FE62003840F2 /* ViewController.swift in Sources */,
 				CBFF936B2B57FE62003840F2 /* AppDelegate.swift in Sources */,
 				CBFF936D2B57FE62003840F2 /* SceneDelegate.swift in Sources */,
@@ -354,6 +365,7 @@
 				CB245DF82B5899DD00E10119 /* NetworkRequestProtocol.swift in Sources */,
 				CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */,
 				CB245DF62B5899BC00E10119 /* NetworkErrors.swift in Sources */,
+				CB245E2A2B59D19500E10119 /* Date+FormattedString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
