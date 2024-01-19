@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 typealias GetStatusCompletion = (Result<APIStatus, NetworkError>) -> Void
 typealias GetSportsDataCompletion = (Result<SportsData, NetworkError>) -> Void
 typealias GetEventsDataCompletion = (Result<EventsData, NetworkError>) -> Void
@@ -33,6 +32,7 @@ final class NetworkService {
 }
 
 // MARK: - HasGetStatusService
+
 extension NetworkService: HasGetStatusService {
     func getStatus(completion: @escaping GetStatusCompletion) {
         let getStatusRequest = GetStatusRequest()
@@ -41,6 +41,7 @@ extension NetworkService: HasGetStatusService {
 }
 
 // MARK: - HasGetSportsDataService
+
 extension NetworkService: HasGetSportsDataService {
     func getSportsData(completion: @escaping GetSportsDataCompletion) {
         let getSportsDataRequest = GetSportsDataRequest()
@@ -49,6 +50,7 @@ extension NetworkService: HasGetSportsDataService {
 }
 
 // MARK: - HasGetEventsDataService
+
 extension NetworkService: HasGetEventsDataService {
     func getEventsData(sportId: Int, completion: @escaping GetEventsDataCompletion) {
         let getEventsDataRequest = GetEventsDataRequest(sportId: sportId)
