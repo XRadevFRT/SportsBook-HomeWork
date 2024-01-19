@@ -51,6 +51,7 @@
 		CB245E5D2B5A93D900E10119 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = CB245E5C2B5A93D900E10119 /* SnapshotTesting */; };
 		CB245E5F2B5A93F700E10119 /* StatusScreenViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E5E2B5A93F700E10119 /* StatusScreenViewControllerSnapshotTests.swift */; };
 		CB245E612B5AAA5D00E10119 /* BaseSportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E602B5AAA5D00E10119 /* BaseSportView.swift */; };
+		CB245E662B5AB38F00E10119 /* SnapshotSupportContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E652B5AB38F00E10119 /* SnapshotSupportContainer.swift */; };
 		CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */; };
 		CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */; };
 		CBF1E7A92B586310002D5FCD /* NetworkClientTestsMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */; };
@@ -115,6 +116,7 @@
 		CB245E592B5A854800E10119 /* StatusScreenRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusScreenRouterTests.swift; sourceTree = "<group>"; };
 		CB245E5E2B5A93F700E10119 /* StatusScreenViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusScreenViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
 		CB245E602B5AAA5D00E10119 /* BaseSportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSportView.swift; sourceTree = "<group>"; };
+		CB245E652B5AB38F00E10119 /* SnapshotSupportContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotSupportContainer.swift; sourceTree = "<group>"; };
 		CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
 		CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTestsMocks.swift; sourceTree = "<group>"; };
@@ -306,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				CB245E502B5A208C00E10119 /* Activable.swift */,
+				CB245E652B5AB38F00E10119 /* SnapshotSupportContainer.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -501,6 +504,7 @@
 				CB245E222B59978900E10119 /* Odds.swift in Sources */,
 				CB245E2C2B59ED6C00E10119 /* GetEventsDataRequest.swift in Sources */,
 				CBFF936B2B57FE62003840F2 /* AppDelegate.swift in Sources */,
+				CB245E662B5AB38F00E10119 /* SnapshotSupportContainer.swift in Sources */,
 				CBFF936D2B57FE62003840F2 /* SceneDelegate.swift in Sources */,
 				CB245E4C2B5A160700E10119 /* StatusScreenInteractor.swift in Sources */,
 				CB245E612B5AAA5D00E10119 /* BaseSportView.swift in Sources */,
