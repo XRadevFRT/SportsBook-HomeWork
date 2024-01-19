@@ -11,15 +11,15 @@ typealias GetStatusCompletion = (Result<APIStatus, NetworkError>) -> Void
 typealias GetSportsDataCompletion = (Result<SportsData, NetworkError>) -> Void
 typealias GetEventsDataCompletion = (Result<EventsData, NetworkError>) -> Void
 
-protocol HasGetStatusService {
+protocol GetStatusServiceProtocol {
     func getStatus(completion: @escaping GetStatusCompletion)
 }
 
-protocol HasGetSportsDataService {
+protocol GetSportsDataServiceProtocol {
     func getSportsData(completion: @escaping GetSportsDataCompletion)
 }
 
-protocol HasGetEventsDataService {
+protocol GetEventsDataServiceProtocol {
     func getEventsData(sportId: Int, completion: @escaping GetEventsDataCompletion)
 }
 
@@ -31,27 +31,27 @@ final class NetworkService {
     }
 }
 
-// MARK: - HasGetStatusService
+// MARK: - GetStatusServiceProtocol
 
-extension NetworkService: HasGetStatusService {
+extension NetworkService: GetStatusServiceProtocol {
     func getStatus(completion: @escaping GetStatusCompletion) {
         let getStatusRequest = GetStatusRequest()
         networkClient.sendRequest(getStatusRequest, completion: completion)
     }
 }
 
-// MARK: - HasGetSportsDataService
+// MARK: - GetSportsDataServiceProtocol
 
-extension NetworkService: HasGetSportsDataService {
+extension NetworkService: GetSportsDataServiceProtocol {
     func getSportsData(completion: @escaping GetSportsDataCompletion) {
         let getSportsDataRequest = GetSportsDataRequest()
         networkClient.sendRequest(getSportsDataRequest, completion: completion)
     }
 }
 
-// MARK: - HasGetEventsDataService
+// MARK: - GetEventsDataServiceProtocol
 
-extension NetworkService: HasGetEventsDataService {
+extension NetworkService: GetEventsDataServiceProtocol {
     func getEventsData(sportId: Int, completion: @escaping GetEventsDataCompletion) {
         let getEventsDataRequest = GetEventsDataRequest(sportId: sportId)
         networkClient.sendRequest(getEventsDataRequest, completion: completion)
