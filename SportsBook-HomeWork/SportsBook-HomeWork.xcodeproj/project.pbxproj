@@ -72,6 +72,7 @@
 		CB350FE02B5D641100D3D82D /* SportsListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FDF2B5D641100D3D82D /* SportsListPresenterTests.swift */; };
 		CB350FE22B5D642000D3D82D /* SportsListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FE12B5D642000D3D82D /* SportsListInteractorTests.swift */; };
 		CB350FE42B5D642A00D3D82D /* SportsListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FE32B5D642A00D3D82D /* SportsListRouterTests.swift */; };
+		CB350FE82B5D87E600D3D82D /* OddsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FE72B5D87E600D3D82D /* OddsView.swift */; };
 		CB9128F52B5DDC0800E23B6E /* EventDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9128F42B5DDC0800E23B6E /* EventDateView.swift */; };
 		CB9128F72B5DDD7400E23B6E /* EventDateViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9128F62B5DDD7400E23B6E /* EventDateViewSnapshotTests.swift */; };
 		CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */; };
@@ -159,6 +160,7 @@
 		CB350FDF2B5D641100D3D82D /* SportsListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsListPresenterTests.swift; sourceTree = "<group>"; };
 		CB350FE12B5D642000D3D82D /* SportsListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsListInteractorTests.swift; sourceTree = "<group>"; };
 		CB350FE32B5D642A00D3D82D /* SportsListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsListRouterTests.swift; sourceTree = "<group>"; };
+		CB350FE72B5D87E600D3D82D /* OddsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsView.swift; sourceTree = "<group>"; };
 		CB9128F42B5DDC0800E23B6E /* EventDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDateView.swift; sourceTree = "<group>"; };
 		CB9128F62B5DDD7400E23B6E /* EventDateViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDateViewSnapshotTests.swift; sourceTree = "<group>"; };
 		CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				CB245E602B5AAA5D00E10119 /* BaseSportView.swift */,
+				CB350FE72B5D87E600D3D82D /* OddsView.swift */,
 				CB9128F42B5DDC0800E23B6E /* EventDateView.swift */,
 			);
 			path = UIComponents;
@@ -621,6 +624,7 @@
 				CB245E6E2B5AD06C00E10119 /* UITableView+dequeuCell.swift in Sources */,
 				CB245E7C2B5C214F00E10119 /* AlertPresentable.swift in Sources */,
 				CB245E802B5C5B1300E10119 /* String+Localized.swift in Sources */,
+				CB350FE82B5D87E600D3D82D /* OddsView.swift in Sources */,
 				CB245E2A2B59D19500E10119 /* Date+FormattedString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
