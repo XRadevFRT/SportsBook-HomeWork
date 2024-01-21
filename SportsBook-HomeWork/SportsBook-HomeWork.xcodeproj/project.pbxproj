@@ -72,6 +72,7 @@
 		CB350FE02B5D641100D3D82D /* SportsListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FDF2B5D641100D3D82D /* SportsListPresenterTests.swift */; };
 		CB350FE22B5D642000D3D82D /* SportsListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FE12B5D642000D3D82D /* SportsListInteractorTests.swift */; };
 		CB350FE42B5D642A00D3D82D /* SportsListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FE32B5D642A00D3D82D /* SportsListRouterTests.swift */; };
+		CB9128F52B5DDC0800E23B6E /* EventDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9128F42B5DDC0800E23B6E /* EventDateView.swift */; };
 		CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */; };
 		CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */; };
 		CBF1E7A92B586310002D5FCD /* NetworkClientTestsMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */; };
@@ -223,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				CB245E602B5AAA5D00E10119 /* BaseSportView.swift */,
+				CB9128F42B5DDC0800E23B6E /* EventDateView.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -595,6 +597,7 @@
 				CB245E262B59983E00E10119 /* EventsData.swift in Sources */,
 				CB245E222B59978900E10119 /* Odds.swift in Sources */,
 				CB245E2C2B59ED6C00E10119 /* GetEventsDataRequest.swift in Sources */,
+				CB9128F52B5DDC0800E23B6E /* EventDateView.swift in Sources */,
 				CBFF936B2B57FE62003840F2 /* AppDelegate.swift in Sources */,
 				CB245E662B5AB38F00E10119 /* SnapshotSupportContainer.swift in Sources */,
 				CBFF936D2B57FE62003840F2 /* SceneDelegate.swift in Sources */,
