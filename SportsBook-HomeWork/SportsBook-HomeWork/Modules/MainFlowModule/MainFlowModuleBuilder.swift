@@ -18,6 +18,8 @@ final class MainFlowModuleDependencyContainer {
     }
 }
 
+// MARK: - StatusScreenBuilderDependency
+
 extension MainFlowModuleDependencyContainer: StatusScreenBuilderDependency {
     var presentingViewController: UIViewController {
         mainNavigationController
@@ -26,8 +28,16 @@ extension MainFlowModuleDependencyContainer: StatusScreenBuilderDependency {
     var getStatusService: GetStatusServiceProtocol {
         networkService
     }
-
 }
+
+// MARK: - SportsListBuilderDependency
+
+extension MainFlowModuleDependencyContainer: SportsListBuilderDependency {
+    var getSportsListService: GetSportsDataServiceProtocol {
+        networkService
+    }
+}
+
 
 final class MainFlowModuleBuilder {
     func build() -> MainFlowModuleInput {
@@ -36,10 +46,13 @@ final class MainFlowModuleBuilder {
             networkService: NetworkService())
 
         let statusScreenBuilder = StatusScreenBuilder(dependancy: dependencyContainer)
+        let sportsListBuilder = SportsListBuilder(dependency: dependencyContainer)
 
         let router = MainFlowModuleRouter(
             statusScreenBuilder: statusScreenBuilder,
+            sportsListBuilder: sportsListBuilder,
             mainNavigationController: dependencyContainer.mainNavigationController)
+        
         let presenter = MainFlowModulePresenter(router: router)
 
         router.output = presenter
