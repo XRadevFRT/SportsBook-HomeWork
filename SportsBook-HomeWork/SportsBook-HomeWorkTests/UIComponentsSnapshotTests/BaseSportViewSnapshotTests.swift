@@ -17,9 +17,16 @@ final class BaseSportViewSnapshotTests: XCTestCase {
 //         isRecording = true
     }
 
-    func testBaseSportViewSnapshotTests() {
+    func testBaseSportViewDefault() {
         let baseSportView = BaseSportView()
         baseSportView.updateTitle("Football")
+
+        assertSnapshots(of: SnapshotSupportContainer(baseSportView), as: [.image])
+    }
+
+    func testBaseSportViewWithUnknownSportName() {
+        let baseSportView = BaseSportView()
+        baseSportView.updateTitle("")
 
         assertSnapshots(of: SnapshotSupportContainer(baseSportView), as: [.image])
     }
