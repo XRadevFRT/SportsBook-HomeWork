@@ -75,6 +75,7 @@
 		CB350FE62B5D878A00D3D82D /* RunnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FE52B5D878A00D3D82D /* RunnerView.swift */; };
 		CB350FE82B5D87E600D3D82D /* OddsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FE72B5D87E600D3D82D /* OddsView.swift */; };
 		CB350FEA2B5D927800D3D82D /* OddsViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FE92B5D927800D3D82D /* OddsViewSnapshotTests.swift */; };
+		CB350FEC2B5D9CD700D3D82D /* RunnerViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FEB2B5D9CD700D3D82D /* RunnerViewSnapshotTests.swift */; };
 		CB9128F52B5DDC0800E23B6E /* EventDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9128F42B5DDC0800E23B6E /* EventDateView.swift */; };
 		CB9128F72B5DDD7400E23B6E /* EventDateViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9128F62B5DDD7400E23B6E /* EventDateViewSnapshotTests.swift */; };
 		CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */; };
@@ -165,6 +166,7 @@
 		CB350FE52B5D878A00D3D82D /* RunnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerView.swift; sourceTree = "<group>"; };
 		CB350FE72B5D87E600D3D82D /* OddsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsView.swift; sourceTree = "<group>"; };
 		CB350FE92B5D927800D3D82D /* OddsViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsViewSnapshotTests.swift; sourceTree = "<group>"; };
+		CB350FEB2B5D9CD700D3D82D /* RunnerViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerViewSnapshotTests.swift; sourceTree = "<group>"; };
 		CB9128F42B5DDC0800E23B6E /* EventDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDateView.swift; sourceTree = "<group>"; };
 		CB9128F62B5DDD7400E23B6E /* EventDateViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDateViewSnapshotTests.swift; sourceTree = "<group>"; };
 		CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
@@ -393,6 +395,7 @@
 			children = (
 				CB245E632B5AB13F00E10119 /* BaseSportViewSnapshotTests.swift */,
 				CB350FE92B5D927800D3D82D /* OddsViewSnapshotTests.swift */,
+				CB350FEB2B5D9CD700D3D82D /* RunnerViewSnapshotTests.swift */,
 				CB9128F62B5DDD7400E23B6E /* EventDateViewSnapshotTests.swift */,
 			);
 			path = UIComponentsSnapshotTests;
@@ -660,6 +663,7 @@
 				CB245E562B5A7CD000E10119 /* StatusScreenPresenterTests.swift in Sources */,
 				CBF1E7A92B586310002D5FCD /* NetworkClientTestsMocks.swift in Sources */,
 				CB350FDE2B5D63FC00D3D82D /* SportsListViewControllerSnapshotTests.swift in Sources */,
+				CB350FEC2B5D9CD700D3D82D /* RunnerViewSnapshotTests.swift in Sources */,
 				CB245E182B5983E800E10119 /* GetSportsDataRequestTests.swift in Sources */,
 				CB9128F72B5DDD7400E23B6E /* EventDateViewSnapshotTests.swift in Sources */,
 				CB245E412B5A106700E10119 /* MainFlowModuleRouterTests.swift in Sources */,
