@@ -56,8 +56,11 @@
 		CB245E682B5ABA0100E10119 /* GenericTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E672B5ABA0100E10119 /* GenericTableViewCell.swift */; };
 		CB245E6C2B5ACFAF00E10119 /* UITableVIew+registerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E6B2B5ACFAF00E10119 /* UITableVIew+registerCell.swift */; };
 		CB245E6E2B5AD06C00E10119 /* UITableView+dequeuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E6D2B5AD06C00E10119 /* UITableView+dequeuCell.swift */; };
+		CB245E7C2B5C214F00E10119 /* AlertPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E7B2B5C214F00E10119 /* AlertPresentable.swift */; };
 		CB245E802B5C5B1300E10119 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E7F2B5C5B1300E10119 /* String+Localized.swift */; };
 		CB245E852B5C5D0700E10119 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB245E872B5C5D0700E10119 /* Localizable.strings */; };
+		CB245E892B5C6D5300E10119 /* UITableView+CommonTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E882B5C6D5300E10119 /* UITableView+CommonTableView.swift */; };
+		CB350FD72B5CA47900D3D82D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FD62B5CA47900D3D82D /* Theme.swift */; };
 		CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */; };
 		CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */; };
 		CBF1E7A92B586310002D5FCD /* NetworkClientTestsMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */; };
@@ -127,8 +130,11 @@
 		CB245E672B5ABA0100E10119 /* GenericTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewCell.swift; sourceTree = "<group>"; };
 		CB245E6B2B5ACFAF00E10119 /* UITableVIew+registerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableVIew+registerCell.swift"; sourceTree = "<group>"; };
 		CB245E6D2B5AD06C00E10119 /* UITableView+dequeuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+dequeuCell.swift"; sourceTree = "<group>"; };
+		CB245E7B2B5C214F00E10119 /* AlertPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentable.swift; sourceTree = "<group>"; };
 		CB245E7F2B5C5B1300E10119 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		CB245E862B5C5D0700E10119 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CB245E882B5C6D5300E10119 /* UITableView+CommonTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+CommonTableView.swift"; sourceTree = "<group>"; };
+		CB350FD62B5CA47900D3D82D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
 		CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTestsMocks.swift; sourceTree = "<group>"; };
@@ -166,6 +172,7 @@
 				CBFF93732B57FE64003840F2 /* Assets.xcassets */,
 				CBFF93752B57FE64003840F2 /* LaunchScreen.storyboard */,
 				CBFF93782B57FE64003840F2 /* Info.plist */,
+				CB350FD62B5CA47900D3D82D /* Theme.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -216,6 +223,7 @@
 				CB245E2F2B59F31E00E10119 /* NumberFormatter+OrdinalNumber.swift */,
 				CB245E6B2B5ACFAF00E10119 /* UITableVIew+registerCell.swift */,
 				CB245E6D2B5AD06C00E10119 /* UITableView+dequeuCell.swift */,
+				CB245E882B5C6D5300E10119 /* UITableView+CommonTableView.swift */,
 				CB245E7F2B5C5B1300E10119 /* String+Localized.swift */,
 			);
 			path = Extensions;
@@ -323,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				CB245E502B5A208C00E10119 /* Activable.swift */,
+				CB245E7B2B5C214F00E10119 /* AlertPresentable.swift */,
 				CB245E652B5AB38F00E10119 /* SnapshotSupportContainer.swift */,
 				CB245E672B5ABA0100E10119 /* GenericTableViewCell.swift */,
 			);
@@ -522,6 +531,7 @@
 				CB245DFC2B589A7300E10119 /* URL+Validation.swift in Sources */,
 				CB245E372B59FF8600E10119 /* MainFlowModuleRouter.swift in Sources */,
 				CB245E242B5997A100E10119 /* MarketType.swift in Sources */,
+				CB245E892B5C6D5300E10119 /* UITableView+CommonTableView.swift in Sources */,
 				CB245E1C2B59972600E10119 /* Event.swift in Sources */,
 				CB245DFA2B5899FE00E10119 /* NetworkClientProtocol.swift in Sources */,
 				CB245E332B59FF5100E10119 /* MainFlowModuleBuilder.swift in Sources */,
@@ -542,10 +552,12 @@
 				CB245E0D2B596E4700E10119 /* APIStatus.swift in Sources */,
 				CB245E352B59FF7400E10119 /* MainFlowModulePresenter.swift in Sources */,
 				CB245E462B5A157000E10119 /* StatusScreenBuilder.swift in Sources */,
+				CB350FD72B5CA47900D3D82D /* Theme.swift in Sources */,
 				CB245DF82B5899DD00E10119 /* NetworkRequestProtocol.swift in Sources */,
 				CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */,
 				CB245DF62B5899BC00E10119 /* NetworkErrors.swift in Sources */,
 				CB245E6E2B5AD06C00E10119 /* UITableView+dequeuCell.swift in Sources */,
+				CB245E7C2B5C214F00E10119 /* AlertPresentable.swift in Sources */,
 				CB245E802B5C5B1300E10119 /* String+Localized.swift in Sources */,
 				CB245E2A2B59D19500E10119 /* Date+FormattedString.swift in Sources */,
 			);
