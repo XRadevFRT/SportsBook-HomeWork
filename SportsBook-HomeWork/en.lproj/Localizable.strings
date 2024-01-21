@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  SportsBook-HomeWork
+
+  Created by Radoslav Radev  on 20.01.24.
+  
+*/
+
+// MARK: - Alert
+
+"alertOopsTite" = "Oops...";
+"alertFailedAPICallMessage" = "It seems something is wrong with the local API. Please restart the API and try again";
+"alertRetryActionTitle" = "Retry";
+
+// MARK: - SportList
+
+"sportListScreenTitle" = "Sports";
+"sportListScreenEmptySportName" = "Unknown sport";
