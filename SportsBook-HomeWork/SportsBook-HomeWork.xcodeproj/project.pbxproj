@@ -56,6 +56,8 @@
 		CB245E682B5ABA0100E10119 /* GenericTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E672B5ABA0100E10119 /* GenericTableViewCell.swift */; };
 		CB245E6C2B5ACFAF00E10119 /* UITableVIew+registerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E6B2B5ACFAF00E10119 /* UITableVIew+registerCell.swift */; };
 		CB245E6E2B5AD06C00E10119 /* UITableView+dequeuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E6D2B5AD06C00E10119 /* UITableView+dequeuCell.swift */; };
+		CB245E802B5C5B1300E10119 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB245E7F2B5C5B1300E10119 /* String+Localized.swift */; };
+		CB245E852B5C5D0700E10119 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB245E872B5C5D0700E10119 /* Localizable.strings */; };
 		CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */; };
 		CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */; };
 		CBF1E7A92B586310002D5FCD /* NetworkClientTestsMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */; };
@@ -125,6 +127,8 @@
 		CB245E672B5ABA0100E10119 /* GenericTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewCell.swift; sourceTree = "<group>"; };
 		CB245E6B2B5ACFAF00E10119 /* UITableVIew+registerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableVIew+registerCell.swift"; sourceTree = "<group>"; };
 		CB245E6D2B5AD06C00E10119 /* UITableView+dequeuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+dequeuCell.swift"; sourceTree = "<group>"; };
+		CB245E7F2B5C5B1300E10119 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		CB245E862B5C5D0700E10119 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
 		CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTestsMocks.swift; sourceTree = "<group>"; };
@@ -212,6 +216,7 @@
 				CB245E2F2B59F31E00E10119 /* NumberFormatter+OrdinalNumber.swift */,
 				CB245E6B2B5ACFAF00E10119 /* UITableVIew+registerCell.swift */,
 				CB245E6D2B5AD06C00E10119 /* UITableView+dequeuCell.swift */,
+				CB245E7F2B5C5B1300E10119 /* String+Localized.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -357,6 +362,7 @@
 		CBFF935E2B57FE61003840F2 = {
 			isa = PBXGroup;
 			children = (
+				CB245E872B5C5D0700E10119 /* Localizable.strings */,
 				CB245DF22B58877B00E10119 /* SportsBook-HomeWorkTests.xctestplan */,
 				CBFF93692B57FE62003840F2 /* SportsBook-HomeWork */,
 				CBFF93802B57FE64003840F2 /* SportsBook-HomeWorkTests */,
@@ -485,6 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBFF93772B57FE64003840F2 /* LaunchScreen.storyboard in Resources */,
+				CB245E852B5C5D0700E10119 /* Localizable.strings in Resources */,
 				CBFF93742B57FE64003840F2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,6 +546,7 @@
 				CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */,
 				CB245DF62B5899BC00E10119 /* NetworkErrors.swift in Sources */,
 				CB245E6E2B5AD06C00E10119 /* UITableView+dequeuCell.swift in Sources */,
+				CB245E802B5C5B1300E10119 /* String+Localized.swift in Sources */,
 				CB245E2A2B59D19500E10119 /* Date+FormattedString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,6 +585,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CB245E872B5C5D0700E10119 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB245E862B5C5D0700E10119 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		CBFF93752B57FE64003840F2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
