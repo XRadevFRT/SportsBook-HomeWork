@@ -28,10 +28,20 @@ final class MainFlowModulePresenterTests: XCTestCase {
         presenter.launch(from: .init(frame: .zero))
         XCTAssertEqual(mockRouter.showInitialScreenCallCount, 1)
     }
+
+    func testStatusScreenFinished() {
+        presenter.statusScreenFinished()
+        XCTAssertEqual(mockRouter.showSportsListScreenCallCount, 1)
+    }
 }
 
 private extension MainFlowModulePresenterTests {
     final class MockRouter: MainFlowModuleRouterInput {
+        var showSportsListScreenCallCount = 0
+        func showSportsListScreen() {
+            showSportsListScreenCallCount += 1
+        }
+        
         var showInitialScreenCallCount = 0
         func showInitialScreen(from window: UIWindow?) {
             showInitialScreenCallCount += 1
