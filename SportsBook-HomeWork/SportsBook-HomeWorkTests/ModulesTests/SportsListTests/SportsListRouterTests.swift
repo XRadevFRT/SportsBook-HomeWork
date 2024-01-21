@@ -1,24 +1,24 @@
 //
-//  StatusScreenRouterTests.swift
+//  SportsListRouterTests.swift
 //  SportsBook-HomeWorkTests
 //
-//  Created by Radoslav Radev  on 19.01.24.
+//  Created by Radoslav Radev  on 21.01.24.
 //
 
 import XCTest
 @testable import SportsBook_HomeWork
 
-final class StatusScreenRouterTests: XCTestCase {
+final class SportsListRouterTests: XCTestCase {
     private var mockPresentingViewController: MockPresentingViewController!
-    private var mockOutput: MockStatusScreenRouterOutput!
-    private var router: StatusScreenRouter!
+    private var mockOutput: MockSportListRouterOutput!
+    private var router: SportsListRouter!
 
     override func setUp() {
         super.setUp()
         mockPresentingViewController = MockPresentingViewController()
-        mockOutput = MockStatusScreenRouterOutput()
+        mockOutput = MockSportListRouterOutput()
 
-        router = StatusScreenRouter(presentingViewController: mockPresentingViewController)
+        router = SportsListRouter(presentingViewController: mockPresentingViewController)
         router.output = mockOutput
     }
 
@@ -29,7 +29,7 @@ final class StatusScreenRouterTests: XCTestCase {
         super.tearDown()
     }
 
-    func testShowBadAPIStatusAlert() {
+    func testshowFailedRequestAlert() {
         let expectation = expectation(description: "Correct Expectation")
 
         mockPresentingViewController.presentHandler = { viewController, animated, completion in
@@ -48,7 +48,7 @@ final class StatusScreenRouterTests: XCTestCase {
             completion?()
         }
 
-        router.showBadAPIStatusAlert()
+        router.showFailedRequestAlert()
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             expectation.fulfill()
@@ -68,7 +68,7 @@ final class StatusScreenRouterTests: XCTestCase {
     }
 }
 
-private extension StatusScreenRouterTests {
+private extension SportsListRouterTests {
     final class MockPresentingViewController: UIViewController {
         var presentCallCount = 0
         var presentHandler: ((UIViewController, Bool, (() -> Void)?) -> Void)?
@@ -78,7 +78,7 @@ private extension StatusScreenRouterTests {
         }
     }
 
-    final class MockStatusScreenRouterOutput: StatusScreenRouterOutput {
+    final class MockSportListRouterOutput: SportsListRouterOutput {
         var didPressRetryCallCount = 0
         func didPressRetry() {
             didPressRetryCallCount += 1
