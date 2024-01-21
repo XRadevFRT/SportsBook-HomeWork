@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BaseSportView: TapAnimatedView {
+final class BaseSportView: TapAnimatedView {
 
     // MARK: - Properties
 

@@ -18,7 +18,7 @@ enum Theme {
     }
 
     enum CornerRadiusProvider {
-        static let defaultRadius: CGFloat = 8
+        static let defaultRadius: CGFloat = 12
 
     }
 }
