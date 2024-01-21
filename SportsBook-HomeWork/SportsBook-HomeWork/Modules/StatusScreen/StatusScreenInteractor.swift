@@ -30,12 +30,12 @@ final class StatusScreenInteractor {
 
 extension StatusScreenInteractor: StatusScreenInteractorInput {
     func getAPIStatus() {
-        getStatusService.getStatus { [weak self] result in
+        getStatusService.getStatus { [weak output] result in
             switch result {
             case .success(let result):
-                self?.output?.getAPIStatusSuccess(result)
+                output?.getAPIStatusSuccess(result)
             case .failure:
-                self?.output?.getAPIStatusFailed()
+                output?.getAPIStatusFailed()
             }
         }
     }
