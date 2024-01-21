@@ -76,6 +76,7 @@
 		CB350FE82B5D87E600D3D82D /* OddsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FE72B5D87E600D3D82D /* OddsView.swift */; };
 		CB350FEA2B5D927800D3D82D /* OddsViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FE92B5D927800D3D82D /* OddsViewSnapshotTests.swift */; };
 		CB350FEC2B5D9CD700D3D82D /* RunnerViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FEB2B5D9CD700D3D82D /* RunnerViewSnapshotTests.swift */; };
+		CB350FEE2B5DA45000D3D82D /* MarketEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FED2B5DA45000D3D82D /* MarketEventView.swift */; };
 		CB9128F52B5DDC0800E23B6E /* EventDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9128F42B5DDC0800E23B6E /* EventDateView.swift */; };
 		CB9128F72B5DDD7400E23B6E /* EventDateViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9128F62B5DDD7400E23B6E /* EventDateViewSnapshotTests.swift */; };
 		CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */; };
@@ -167,6 +168,7 @@
 		CB350FE72B5D87E600D3D82D /* OddsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsView.swift; sourceTree = "<group>"; };
 		CB350FE92B5D927800D3D82D /* OddsViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsViewSnapshotTests.swift; sourceTree = "<group>"; };
 		CB350FEB2B5D9CD700D3D82D /* RunnerViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerViewSnapshotTests.swift; sourceTree = "<group>"; };
+		CB350FED2B5DA45000D3D82D /* MarketEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketEventView.swift; sourceTree = "<group>"; };
 		CB9128F42B5DDC0800E23B6E /* EventDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDateView.swift; sourceTree = "<group>"; };
 		CB9128F62B5DDD7400E23B6E /* EventDateViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDateViewSnapshotTests.swift; sourceTree = "<group>"; };
 		CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				CB245E602B5AAA5D00E10119 /* BaseSportView.swift */,
 				CB350FE52B5D878A00D3D82D /* RunnerView.swift */,
 				CB350FE72B5D87E600D3D82D /* OddsView.swift */,
+				CB350FED2B5DA45000D3D82D /* MarketEventView.swift */,
 				CB9128F42B5DDC0800E23B6E /* EventDateView.swift */,
 			);
 			path = UIComponents;
@@ -603,6 +606,7 @@
 				CB245E242B5997A100E10119 /* MarketType.swift in Sources */,
 				CB245E892B5C6D5300E10119 /* UITableView+CommonTableView.swift in Sources */,
 				CB245E1C2B59972600E10119 /* Event.swift in Sources */,
+				CB350FEE2B5DA45000D3D82D /* MarketEventView.swift in Sources */,
 				CB245DFA2B5899FE00E10119 /* NetworkClientProtocol.swift in Sources */,
 				CB245E332B59FF5100E10119 /* MainFlowModuleBuilder.swift in Sources */,
 				CB245E6C2B5ACFAF00E10119 /* UITableVIew+registerCell.swift in Sources */,
