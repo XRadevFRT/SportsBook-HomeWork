@@ -77,6 +77,7 @@
 		CB350FEA2B5D927800D3D82D /* OddsViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FE92B5D927800D3D82D /* OddsViewSnapshotTests.swift */; };
 		CB350FEC2B5D9CD700D3D82D /* RunnerViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FEB2B5D9CD700D3D82D /* RunnerViewSnapshotTests.swift */; };
 		CB350FEE2B5DA45000D3D82D /* MarketEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FED2B5DA45000D3D82D /* MarketEventView.swift */; };
+		CB350FF02B5DAB5700D3D82D /* MarketEventViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FEF2B5DAB5700D3D82D /* MarketEventViewSnapshotTests.swift */; };
 		CB9128F52B5DDC0800E23B6E /* EventDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9128F42B5DDC0800E23B6E /* EventDateView.swift */; };
 		CB9128F72B5DDD7400E23B6E /* EventDateViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9128F62B5DDD7400E23B6E /* EventDateViewSnapshotTests.swift */; };
 		CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */; };
@@ -169,6 +170,7 @@
 		CB350FE92B5D927800D3D82D /* OddsViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsViewSnapshotTests.swift; sourceTree = "<group>"; };
 		CB350FEB2B5D9CD700D3D82D /* RunnerViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerViewSnapshotTests.swift; sourceTree = "<group>"; };
 		CB350FED2B5DA45000D3D82D /* MarketEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketEventView.swift; sourceTree = "<group>"; };
+		CB350FEF2B5DAB5700D3D82D /* MarketEventViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketEventViewSnapshotTests.swift; sourceTree = "<group>"; };
 		CB9128F42B5DDC0800E23B6E /* EventDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDateView.swift; sourceTree = "<group>"; };
 		CB9128F62B5DDD7400E23B6E /* EventDateViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDateViewSnapshotTests.swift; sourceTree = "<group>"; };
 		CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
@@ -399,6 +401,7 @@
 				CB245E632B5AB13F00E10119 /* BaseSportViewSnapshotTests.swift */,
 				CB350FE92B5D927800D3D82D /* OddsViewSnapshotTests.swift */,
 				CB350FEB2B5D9CD700D3D82D /* RunnerViewSnapshotTests.swift */,
+				CB350FEF2B5DAB5700D3D82D /* MarketEventViewSnapshotTests.swift */,
 				CB9128F62B5DDD7400E23B6E /* EventDateViewSnapshotTests.swift */,
 			);
 			path = UIComponentsSnapshotTests;
@@ -660,6 +663,7 @@
 				CB245E642B5AB13F00E10119 /* BaseSportViewSnapshotTests.swift in Sources */,
 				CB245E5F2B5A93F700E10119 /* StatusScreenViewControllerSnapshotTests.swift in Sources */,
 				CB350FE22B5D642000D3D82D /* SportsListInteractorTests.swift in Sources */,
+				CB350FF02B5DAB5700D3D82D /* MarketEventViewSnapshotTests.swift in Sources */,
 				CB350FDC2B5D63D000D3D82D /* SportsListBuilderTests.swift in Sources */,
 				CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */,
 				CB245E102B59721900E10119 /* GetStatusRequestTests.swift in Sources */,
