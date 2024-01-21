@@ -18,11 +18,11 @@ enum StatusScreenResult {
 
 typealias StatusScreenBuilderCompletionHandler = () -> Void
 
-protocol StatusScreenBuilderBuildable: AnyObject {
+protocol StatusScreenBuildable: AnyObject {
     func build(handler: @escaping StatusScreenBuilderCompletionHandler) -> UIViewController
 }
 
-final class StatusScreenBuilder: StatusScreenBuilderBuildable {
+final class StatusScreenBuilder: StatusScreenBuildable {
     let dependancy: StatusScreenBuilderDependency
 
     init(dependancy: StatusScreenBuilderDependency) {
