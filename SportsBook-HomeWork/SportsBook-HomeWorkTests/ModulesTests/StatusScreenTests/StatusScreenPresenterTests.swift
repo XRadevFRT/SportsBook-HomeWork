@@ -11,7 +11,7 @@ import XCTest
 final class StatusScreenPresenterTests: XCTestCase {
     private var mockView: MockStatusScreenViewController!
     private var mockInteractor: MockStatusScreenInteractor!
-    private var mockrouter: MockStatusScreenRouter!
+    private var mockRouter: MockStatusScreenRouter!
 
     private var completionHandlerCallCount = 0
     private var completionHandler: StatusScreenBuilderCompletionHandler! = {}
@@ -19,7 +19,7 @@ final class StatusScreenPresenterTests: XCTestCase {
     private var presenter: StatusScreenPresenter {
         .init(view: mockView,
               interactor: mockInteractor,
-              router: mockrouter,
+              router: mockRouter,
               completionHandler: completionHandler)
     }
 
@@ -27,7 +27,7 @@ final class StatusScreenPresenterTests: XCTestCase {
         super.setUp()
         mockView = .init()
         mockInteractor = .init()
-        mockrouter = .init()
+        mockRouter = .init()
         completionHandler = {
             self.completionHandlerCallCount += 1
         }
@@ -36,7 +36,7 @@ final class StatusScreenPresenterTests: XCTestCase {
     override func tearDown() {
         mockView = nil
         mockInteractor = nil
-        mockrouter = nil
+        mockRouter = nil
         completionHandler = nil
         completionHandlerCallCount = 0
         super.tearDown()
@@ -61,14 +61,14 @@ final class StatusScreenPresenterTests: XCTestCase {
 
         XCTAssertEqual(mockView.stopActivityIndicatorCallCount, 1)
         XCTAssertEqual(completionHandlerCallCount, 0)
-        XCTAssertEqual(mockrouter.showBadAPIStatusAlertCallCount, 1)
+        XCTAssertEqual(mockRouter.showBadAPIStatusAlertCallCount, 1)
     }
 
     func testGetAPIStatusFailed() {
         presenter.getAPIStatusFailed()
 
         XCTAssertEqual(mockView.stopActivityIndicatorCallCount, 1)
-        XCTAssertEqual(mockrouter.showBadAPIStatusAlertCallCount, 1)
+        XCTAssertEqual(mockRouter.showBadAPIStatusAlertCallCount, 1)
     }
 
     func testDidPressRetry() {
