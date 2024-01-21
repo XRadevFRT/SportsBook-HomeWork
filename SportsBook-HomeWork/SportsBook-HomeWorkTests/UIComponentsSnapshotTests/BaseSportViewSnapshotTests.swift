@@ -14,20 +14,20 @@ final class BaseSportViewSnapshotTests: XCTestCase {
         super.setUp()
 
         // Set TRUE when creating images, FALSE when you test
-//         isRecording = true
+        // isRecording = true
     }
 
     func testBaseSportViewDefault() {
         let baseSportView = BaseSportView()
         baseSportView.updateTitle("Football")
 
-        assertSnapshots(of: SnapshotSupportContainer(baseSportView), as: [.image])
+        assertSnapshot(of: SnapshotSupportContainer(baseSportView), as: .image)
     }
 
     func testBaseSportViewWithUnknownSportName() {
         let baseSportView = BaseSportView()
         baseSportView.updateTitle("")
 
-        assertSnapshots(of: SnapshotSupportContainer(baseSportView), as: [.image])
+        assertSnapshot(of: SnapshotSupportContainer(baseSportView), as: .image)
     }
 }

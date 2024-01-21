@@ -79,6 +79,7 @@
 		CB350FEE2B5DA45000D3D82D /* MarketEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FED2B5DA45000D3D82D /* MarketEventView.swift */; };
 		CB350FF02B5DAB5700D3D82D /* MarketEventViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FEF2B5DAB5700D3D82D /* MarketEventViewSnapshotTests.swift */; };
 		CB350FF22B5DAE5A00D3D82D /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FF12B5DAE5A00D3D82D /* EventView.swift */; };
+		CB350FF42B5DB2E100D3D82D /* EventViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FF32B5DB2E100D3D82D /* EventViewSnapshotTests.swift */; };
 		CB9128F52B5DDC0800E23B6E /* EventDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9128F42B5DDC0800E23B6E /* EventDateView.swift */; };
 		CB9128F72B5DDD7400E23B6E /* EventDateViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9128F62B5DDD7400E23B6E /* EventDateViewSnapshotTests.swift */; };
 		CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */; };
@@ -173,6 +174,7 @@
 		CB350FED2B5DA45000D3D82D /* MarketEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketEventView.swift; sourceTree = "<group>"; };
 		CB350FEF2B5DAB5700D3D82D /* MarketEventViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketEventViewSnapshotTests.swift; sourceTree = "<group>"; };
 		CB350FF12B5DAE5A00D3D82D /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		CB350FF32B5DB2E100D3D82D /* EventViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewSnapshotTests.swift; sourceTree = "<group>"; };
 		CB9128F42B5DDC0800E23B6E /* EventDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDateView.swift; sourceTree = "<group>"; };
 		CB9128F62B5DDD7400E23B6E /* EventDateViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDateViewSnapshotTests.swift; sourceTree = "<group>"; };
 		CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
@@ -405,6 +407,7 @@
 				CB350FE92B5D927800D3D82D /* OddsViewSnapshotTests.swift */,
 				CB350FEB2B5D9CD700D3D82D /* RunnerViewSnapshotTests.swift */,
 				CB350FEF2B5DAB5700D3D82D /* MarketEventViewSnapshotTests.swift */,
+				CB350FF32B5DB2E100D3D82D /* EventViewSnapshotTests.swift */,
 				CB9128F62B5DDD7400E23B6E /* EventDateViewSnapshotTests.swift */,
 			);
 			path = UIComponentsSnapshotTests;
@@ -654,6 +657,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB350FF42B5DB2E100D3D82D /* EventViewSnapshotTests.swift in Sources */,
 				CB245E542B5A707A00E10119 /* StatusScreenBuilderTests.swift in Sources */,
 				CB245E3D2B5A0D2500E10119 /* MainFlowModuleBuilderTests.swift in Sources */,
 				CB245E122B59732C00E10119 /* NetworkServiceTests.swift in Sources */,
