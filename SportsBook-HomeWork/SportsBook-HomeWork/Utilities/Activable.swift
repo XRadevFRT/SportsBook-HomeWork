@@ -7,15 +7,15 @@
 
 import UIKit
 
-public let activityViewTag = (Int.max - 1)
+let activityViewTag = (Int.max - 1)
 
-public protocol Activable: AnyObject {
+protocol Activable: AnyObject {
     func startActivityIndicator()
     func stopActivityIndicator()
 }
 
 extension UIView: Activable {
-    @objc open func startActivityIndicator() {
+    @objc func startActivityIndicator() {
         if let existingActivityView = viewWithTag(activityViewTag) {
             existingActivityView.removeFromSuperview()
         }
@@ -39,7 +39,7 @@ extension UIView: Activable {
         })
     }
 
-    @objc open func stopActivityIndicator() {
+    @objc func stopActivityIndicator() {
         let activityView = viewWithTag(activityViewTag)
 
         if let activityView = activityView {
@@ -53,13 +53,11 @@ extension UIView: Activable {
 }
 
 extension Activable where Self: UIViewController {
-    public func startActivityIndicator() {
+    func startActivityIndicator() {
         view.startActivityIndicator()
     }
 
-    public func stopActivityIndicator() {
-        DispatchQueue.main.async { [weak self] in
-            self?.view.stopActivityIndicator()
-        }
+    func stopActivityIndicator() {
+        view.stopActivityIndicator()
     }
 }
