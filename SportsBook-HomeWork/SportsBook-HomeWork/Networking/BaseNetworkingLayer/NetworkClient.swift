@@ -13,11 +13,13 @@ final class NetworkClient: NetworkClientProtocol {
         do {
             let urlRequest = try buildURLRequest(from: request)
             performRequest(with: urlRequest) { result in
-                switch result {
-                case .success(let data):
-                    self.decodeResponse(data: data, completion: completion)
-                case .failure(let error):
-                    completion(.failure(error))
+                DispatchQueue.main.async { [weak self] in
+                    switch result {
+                    case .success(let data):
+                        self?.decodeResponse(data: data, completion: completion)
+                    case .failure(let error):
+                        completion(.failure(error))
+                    }
                 }
             }
         } catch {

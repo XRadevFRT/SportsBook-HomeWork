@@ -15,9 +15,9 @@ protocol StatusScreenRouterOutput: AnyObject {
     func didPressRetry()
 }
 
-final class StatusScreenRouter {
+final class StatusScreenRouter: AlertPresentable {
     weak var output: StatusScreenRouterOutput?
-    private var presentingViewController: UIViewController
+    var presentingViewController: UIViewController
 
     init(presentingViewController: UIViewController) {
         self.presentingViewController = presentingViewController
@@ -28,23 +28,13 @@ final class StatusScreenRouter {
 
 extension StatusScreenRouter: StatusScreenRouterInput {
     func showBadAPIStatusAlert() {
-        let title = "Oops..."
-        let message = "It seems something is wrong with the local API. Please restart the API and try again"
-        let retryActionTitle = "Retry"
-
-        let alertViewController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let retryAction = UIAlertAction(
-            title: retryActionTitle,
-            style: .default,
-            handler: { [weak self] _ in
-                self?.handleRetryAction()
-            })
-
-        alertViewController.addAction(retryAction)
-
-        DispatchQueue.main.async { [weak self] in
-            self?.presentingViewController.present(alertViewController, animated: true, completion: nil)
+        let retryAction = UIAlertAction.retryAction { [weak self] _ in
+            self?.handleRetryAction()
         }
+
+        presentAlert(title: "alertOopsTite".localized(),
+                     message: "alertFailedAPICallMessage".localized(),
+                     actions: [retryAction])
     }
 
     func handleRetryAction() {
