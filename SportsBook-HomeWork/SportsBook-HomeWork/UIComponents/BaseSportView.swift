@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BaseSportView: UIView {
+class BaseSportView: TapAnimatedView {
 
     // MARK: - Properties
 
@@ -35,15 +35,13 @@ class BaseSportView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
-        setupGestureRecognizers()
+        setupOnTap()
     }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setupUI()
-        setupGestureRecognizers()
+    
+    required init?(coder: NSCoder) {
+        fatalError("BaseSportView.init(coder:) has not been implemented")
     }
-
+    
     // MARK: - UI Setup
     private func setupUI() {
         addSubview(titleLabel)
@@ -56,19 +54,20 @@ class BaseSportView: UIView {
     }
 
     // MARK: - Gesture Recognizers
-    private func setupGestureRecognizers() {
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
-        addGestureRecognizer(tapGesture)
-        isUserInteractionEnabled = true
-    }
 
-    @objc private func viewTapped() {
-        onPressed?()
+    private func setupOnTap() {
+        onTap = { [weak self] in
+            self?.onPressed?()
+        }
     }
 
     // MARK: - Public
 
     func updateTitle(_ text: String) {
+        guard !text.isEmpty else {
+            titleLabel.text = "sportListScreenEmptySportName".localized()
+            return
+        }
         titleLabel.text = text
     }
 }
@@ -79,16 +78,18 @@ private extension BaseSportView {
     var titleLabelConstraints: [NSLayoutConstraint] {
         [
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
-            titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 10),
-            titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10)
+            titleLabel.topAnchor.constraint(equalTo: topAnchor),
+            titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor),
+            titleLabel.trailingAnchor.constraint(equalTo: chevronImageView.leadingAnchor, constant: -5)
         ]
     }
 
     var chevronImageViewConstraints: [NSLayoutConstraint] {
         [
-            chevronImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            chevronImageView.topAnchor.constraint(equalTo: topAnchor, constant: 10),
-            chevronImageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10)
+            chevronImageView.heightAnchor.constraint(equalToConstant: 14),
+            chevronImageView.widthAnchor.constraint(equalToConstant: 14),
+            chevronImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            chevronImageView.trailingAnchor.constraint(equalTo: trailingAnchor)
         ]
     }
 }
