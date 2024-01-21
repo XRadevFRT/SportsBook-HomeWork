@@ -12,7 +12,7 @@ protocol SportsListBuilderDependency {
     var getSportsListService: GetSportsDataServiceProtocol { get }
 }
 
-enum SportsListResult {
+enum SportsListResult: Equatable {
     case sportSelected(_ sportId: Int)
 }
 

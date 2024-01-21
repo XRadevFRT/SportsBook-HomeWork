@@ -15,7 +15,7 @@ struct SportsData: Decodable {
     }
 }
 
-struct Sport: Decodable {
+struct Sport: Decodable, Equatable {
     let id: Int
     let name: String
 }
