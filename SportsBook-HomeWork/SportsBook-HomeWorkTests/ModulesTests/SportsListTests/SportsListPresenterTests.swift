@@ -53,10 +53,12 @@ final class SportsListPresenterTests: XCTestCase {
     }
 
     func testDidSelectSport() {
-        presenter.didSelectSport(100)
+        let expectedSport = Sport(id: 100, name: "Rugby")
+
+        presenter.didSelectSport(.init(id: 100, name: "Rugby"))
 
         XCTAssertEqual(completionHandlerCallCount, 1)
-        XCTAssertEqual(completionHandlerResult, .sportSelected(100))
+        XCTAssertEqual(completionHandlerResult, .sportSelected(expectedSport))
     }
 
     func testGetSportSuccess() {

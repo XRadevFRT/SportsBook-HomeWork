@@ -1,24 +1,24 @@
 //
-//  SportsListRouterTests.swift
+//  SportEventsListRouterTests.swift
 //  SportsBook-HomeWorkTests
 //
-//  Created by Radoslav Radev  on 21.01.24.
+//  Created by Radoslav Radev  on 22.01.24.
 //
 
 import XCTest
 @testable import SportsBook_HomeWork
 
-final class SportsListRouterTests: XCTestCase {
+final class SportEventsListRouterTests: XCTestCase {
     private var mockPresentingViewController: MockPresentingViewController!
-    private var mockOutput: MockSportListRouterOutput!
-    private var router: SportsListRouter!
+    private var mockOutput: MockSportEventsListRouterOutput!
+    private var router: SportEventsListRouter!
 
     override func setUp() {
         super.setUp()
         mockPresentingViewController = MockPresentingViewController()
-        mockOutput = MockSportListRouterOutput()
+        mockOutput = MockSportEventsListRouterOutput()
 
-        router = SportsListRouter(presentingViewController: mockPresentingViewController)
+        router = SportEventsListRouter(presentingViewController: mockPresentingViewController)
         router.output = mockOutput
     }
 
@@ -68,7 +68,7 @@ final class SportsListRouterTests: XCTestCase {
     }
 }
 
-private extension SportsListRouterTests {
+private extension SportEventsListRouterTests {
     final class MockPresentingViewController: UIViewController {
         var presentCallCount = 0
         var presentHandler: ((UIViewController, Bool, (() -> Void)?) -> Void)?
@@ -78,7 +78,7 @@ private extension SportsListRouterTests {
         }
     }
 
-    final class MockSportListRouterOutput: SportsListRouterOutput {
+    final class MockSportEventsListRouterOutput: SportEventsListRouterOutput {
         var didPressRetryCallCount = 0
         func didPressRetry() {
             didPressRetryCallCount += 1

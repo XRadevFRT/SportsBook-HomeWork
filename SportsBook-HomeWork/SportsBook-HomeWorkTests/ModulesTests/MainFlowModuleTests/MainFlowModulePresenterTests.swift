@@ -33,10 +33,29 @@ final class MainFlowModulePresenterTests: XCTestCase {
         presenter.statusScreenFinished()
         XCTAssertEqual(mockRouter.showSportsListScreenCallCount, 1)
     }
+
+    func testsSelectedSport() {
+        let expectedSport = Sport.init(id: 22, name: "Tennis")
+
+        mockRouter.showSportEventsListHandler = { sport in
+            XCTAssertEqual(sport, expectedSport)
+        }
+
+        presenter.selectedSport(.init(id: 22, name: "Tennis"))
+
+        XCTAssertEqual(mockRouter.showSportEventsListCallCount, 1)
+    }
 }
 
 private extension MainFlowModulePresenterTests {
     final class MockRouter: MainFlowModuleRouterInput {
+        var showSportEventsListCallCount = 0
+        var showSportEventsListHandler: ((Sport) -> Void)?
+        func showSportEventsList(sport: Sport) {
+            showSportEventsListCallCount += 1
+            showSportEventsListHandler?(sport)
+        }
+        
         var showSportsListScreenCallCount = 0
         func showSportsListScreen() {
             showSportsListScreenCallCount += 1
