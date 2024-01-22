@@ -1,4 +1,5 @@
-# SportsBook-HomeWork Readme
+# SportsBook-HomeWork
+<img width="716" alt="298581683-1136601f-c0eb-4e32-bcda-7da238e42854" src="https://github.com/XRadevFRT/SportsBook-HomeWork/assets/25984871/68e897cc-9810-497b-a445-6579315bc771">
 
 ## Repository Overview
 
