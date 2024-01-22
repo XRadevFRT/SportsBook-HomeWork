@@ -13,7 +13,7 @@ protocol SportsListBuilderDependency {
 }
 
 enum SportsListResult: Equatable {
-    case sportSelected(_ sportId: Int)
+    case sportSelected(_ sport: Sport)
 }
 
 typealias SportsListBuilderCompletionHandler = (SportsListResult) -> Void

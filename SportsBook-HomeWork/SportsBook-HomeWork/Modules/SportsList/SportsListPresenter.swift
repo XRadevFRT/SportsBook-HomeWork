@@ -33,8 +33,8 @@ final class SportsListPresenter {
 // MARK: - SportsListViewControllerOutput
 
 extension SportsListPresenter: SportsListViewControllerOutput {
-    func didSelectSport(_ sportId: Int) {
-        completionHandler(.sportSelected(sportId))
+    func didSelectSport(_ sport: Sport) {
+        completionHandler(.sportSelected(sport))
     }
     
     func viewIsReady() {

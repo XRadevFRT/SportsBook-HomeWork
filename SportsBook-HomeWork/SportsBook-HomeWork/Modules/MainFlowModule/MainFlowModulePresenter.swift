@@ -29,9 +29,8 @@ extension MainFlowModulePresenter: MainFlowModuleInput {
 }
 
 extension MainFlowModulePresenter: MainFlowRouterOutput {
-    func selectedSport(_ sportId: Int) {
-        print("Selected Sport ID: \(sportId)")
-        // show sports event screen
+    func selectedSport(_ sport: Sport) {
+        router.showSportEventsList(sport: sport)
     }
     
     func statusScreenFinished() {

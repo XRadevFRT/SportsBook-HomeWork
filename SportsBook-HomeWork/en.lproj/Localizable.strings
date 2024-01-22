@@ -16,3 +16,9 @@
 
 "sportListScreenTitle" = "Sports";
 "sportListScreenEmptySportName" = "Unknown sport";
+
+// MARK: - SportEvents
+
+"sportEventsHomeRunner" = "Home";
+"sportEventsDrawRunner" = "Draw";
+"sportEventsAwayRunner" = "Away";
