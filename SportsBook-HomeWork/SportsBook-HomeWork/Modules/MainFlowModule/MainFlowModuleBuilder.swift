@@ -38,6 +38,14 @@ extension MainFlowModuleDependencyContainer: SportsListBuilderDependency {
     }
 }
 
+// MARK: - SportEventsListBuilderDependency
+
+extension MainFlowModuleDependencyContainer: SportEventsListBuilderDependency {
+    var getEventsDataService: GetEventsDataServiceProtocol {
+        networkService
+    }
+}
+
 
 final class MainFlowModuleBuilder {
     func build() -> MainFlowModuleInput {
@@ -47,10 +55,12 @@ final class MainFlowModuleBuilder {
 
         let statusScreenBuilder = StatusScreenBuilder(dependancy: dependencyContainer)
         let sportsListBuilder = SportsListBuilder(dependency: dependencyContainer)
+        let sportEventsListBuilder = SportEventsListBuilder(dependency: dependencyContainer)
 
         let router = MainFlowModuleRouter(
             statusScreenBuilder: statusScreenBuilder,
             sportsListBuilder: sportsListBuilder,
+            sportEventsListBuilder: sportEventsListBuilder,
             mainNavigationController: dependencyContainer.mainNavigationController)
         
         let presenter = MainFlowModulePresenter(router: router)
