@@ -23,6 +23,9 @@ The project's structure facilitates extensive unit testing coverage, encompassin
 
 
 <img width="692" alt="Screenshot 2024-01-22 at 15 45 09" src="https://github.com/XRadevFRT/SportsBook-HomeWork/assets/25984871/48883c3e-a7ea-464e-8e73-45b2dd288b59">
+<img width="447" alt="Screenshot 2024-01-22 at 15 49 01" src="https://github.com/XRadevFRT/SportsBook-HomeWork/assets/25984871/e451a7a9-38f7-43d0-a560-5ceb818b3cce">
+
+
 
 
 To run the unit test, switch from SportsBook-HomeWork to SportsBook-HomeWorkTests
