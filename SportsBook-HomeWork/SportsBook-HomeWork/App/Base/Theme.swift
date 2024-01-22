@@ -14,7 +14,8 @@ enum Theme {
     }
 
     enum Spacings {
-        static let standardCellHSpacing: UIEdgeInsets = .init(top: 20, left: 20, bottom: 20, right: 20)
+        static let standardCellHSpacing: UIEdgeInsets = .init(top: 18, left: 16, bottom: 18, right: 16)
+        static let standardSectionSpacing: UIEdgeInsets = .init(top: 0, left: 8, bottom: 0, right: 8)
     }
 
     enum CornerRadiusProvider {

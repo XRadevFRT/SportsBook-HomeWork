@@ -27,6 +27,7 @@ final class SportsListInteractor {
 }
 
 // MARK: - SportListInteractorInput
+
 extension SportsListInteractor: SportsListInteractorInput {
     func getSportsList() {
         getSportsListService.getSportsData { [weak output] result in

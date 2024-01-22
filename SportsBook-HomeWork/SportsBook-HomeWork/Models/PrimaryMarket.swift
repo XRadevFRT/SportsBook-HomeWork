@@ -10,6 +10,6 @@ import Foundation
 struct PrimaryMarket: Codable {
     let id: String
     let name: String
-    let type: String
+    let type: MarketType
     let runners: [Runner]
 }
