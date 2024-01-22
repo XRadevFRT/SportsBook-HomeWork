@@ -20,7 +20,7 @@ final class EventView: UIView {
         let hStack = UIStackView()
         hStack.translatesAutoresizingMaskIntoConstraints = false
         hStack.axis = .horizontal
-        hStack.spacing = 17
+        hStack.spacing = 16
         return hStack
     }()
 
@@ -47,6 +47,11 @@ final class EventView: UIView {
     }
 
     private func buildUI(_ viewModel: ViewModel) {
+        hStack.arrangedSubviews.forEach {
+            hStack.removeArrangedSubview($0)
+            $0.removeFromSuperview()
+        }
+
         for runnerViewModel in viewModel.runnerViewModel {
             let runnerView = RunnerView()
             runnerView.update(with: runnerViewModel)
@@ -68,7 +73,7 @@ private extension EventView {
     var hStackConstraints: [NSLayoutConstraint] {
         [
             hStack.topAnchor.constraint(equalTo: topAnchor),
-            hStack.trailingAnchor.constraint(equalTo: trailingAnchor, constant:  -10),
+            hStack.trailingAnchor.constraint(equalTo: trailingAnchor, constant:  -5),
             hStack.bottomAnchor.constraint(equalTo: bottomAnchor)
         ]
     }
@@ -78,7 +83,7 @@ private extension EventView {
             marketEventView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5),
             marketEventView.topAnchor.constraint(equalTo: topAnchor),
             marketEventView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            marketEventView.trailingAnchor.constraint(equalTo: hStack.leadingAnchor)
+            marketEventView.trailingAnchor.constraint(equalTo: hStack.leadingAnchor, constant: -10)
         ]
     }
 }

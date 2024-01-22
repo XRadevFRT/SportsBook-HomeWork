@@ -45,7 +45,7 @@ final class GenericTableViewCell<View: UIView>: UITableViewCell {
         }
     }
 
-    var separatorHeight: CGFloat = 1.0 {
+    var separatorHeight: CGFloat = 3.0 {
         didSet {
             setContainerConstraints()
 

@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class OddsView: UIView {
+final class OddsView: TapAnimatedView {
 
     // MARK: - Properties
 

@@ -10,6 +10,7 @@ import Foundation
 struct Runner: Codable {
     let id: String
     let name: String?
+    let totalGoals: Int?
     let marketType: MarketType
     let odds: Odds
 }
