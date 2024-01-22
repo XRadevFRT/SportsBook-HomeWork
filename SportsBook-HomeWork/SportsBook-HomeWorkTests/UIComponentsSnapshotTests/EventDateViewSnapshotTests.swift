@@ -14,7 +14,7 @@ final class EventDateViewSnapshotTests: XCTestCase {
         super.setUp()
 
         // Set TRUE when creating images, FALSE when you test
-         isRecording = true
+        // isRecording = true
     }
 
     func testEventDateView() {

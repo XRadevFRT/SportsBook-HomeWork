@@ -32,8 +32,9 @@ final class MarketEventView: UIView {
         let label = UILabel()
         label.numberOfLines = 1
         label.textAlignment = .left
-        label.textColor = .darkGray
-        label.font = UIFont.systemFont(ofSize: 17, weight: .regular)
+        label.textColor = .darkText
+        label.adjustsFontSizeToFitWidth = true
+        label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         label.setContentHuggingPriority(.required, for: .horizontal)
         label.setContentHuggingPriority(.defaultHigh, for: .horizontal)
         label.setContentCompressionResistancePriority(.required, for: .horizontal)
@@ -45,8 +46,9 @@ final class MarketEventView: UIView {
         let label = UILabel()
         label.numberOfLines = 1
         label.textAlignment = .left
-        label.textColor = .darkGray
-        label.font = UIFont.systemFont(ofSize: 17, weight: .regular)
+        label.textColor = .darkText
+        label.adjustsFontSizeToFitWidth = true
+        label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         label.setContentHuggingPriority(.required, for: .horizontal)
         label.setContentHuggingPriority(.defaultHigh, for: .horizontal)
         label.setContentCompressionResistancePriority(.required, for: .horizontal)

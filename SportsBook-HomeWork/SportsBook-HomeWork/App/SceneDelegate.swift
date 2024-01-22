@@ -20,5 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         mainFlowModuleInput = MainFlowModuleBuilder().build()
         mainFlowModuleInput?.launch(from: window)
+
+        let backButtonAppearance = UIBarButtonItem.appearance(whenContainedInInstancesOf: [UINavigationController.self])
+        backButtonAppearance.tintColor = UIColor.black
     }
 }
