@@ -13,4 +13,10 @@ extension UITableView {
 
        return dequeueReusableCell(withIdentifier: cellName) as! T
     }
+
+    func dequeueCell<T: UITableViewCell>(ofType type: T.Type, for indexPath: IndexPath) -> T?     {
+       let cellName = String(describing: T.self)
+
+       return dequeueReusableCell(withIdentifier: cellName, for: indexPath) as? T
+    }
 }
