@@ -21,7 +21,9 @@ VIPER architecture is the cornerstone of this project. No Storyboards or Nibs ar
 
 The project's structure facilitates extensive unit testing coverage, encompassing nearly every file. Snapshot tests enhance this coverage, specifically validating the views. As a result, the project boasts an impressive test coverage rate exceeding 92%:
 
-<img width="671" alt="Screenshot 2024-01-22 at 13 48 05" src="https://github.com/XRadevFRT/SportsBook-HomeWork/assets/25984871/82bde3d1-2e80-4278-aaa7-093e09e3ac93">
+
+<img width="692" alt="Screenshot 2024-01-22 at 15 45 09" src="https://github.com/XRadevFRT/SportsBook-HomeWork/assets/25984871/48883c3e-a7ea-464e-8e73-45b2dd288b59">
+
 
 To run the unit test, switch from SportsBook-HomeWork to SportsBook-HomeWorkTests
 
