@@ -89,6 +89,11 @@
 		CB9129032B5DEF2C00E23B6E /* SportEventsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9129022B5DEF2C00E23B6E /* SportEventsListRouter.swift */; };
 		CB9129052B5DF3EA00E23B6E /* EventDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9129042B5DF3EA00E23B6E /* EventDay.swift */; };
 		CB9129072B5E01E900E23B6E /* String+parseToHomeAndAway.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9129062B5E01E900E23B6E /* String+parseToHomeAndAway.swift */; };
+		CB91290A2B5E4FA200E23B6E /* SportEventsListBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9129092B5E4FA200E23B6E /* SportEventsListBuilderTests.swift */; };
+		CB91290C2B5E4FB900E23B6E /* SportEventsListViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB91290B2B5E4FB900E23B6E /* SportEventsListViewControllerSnapshotTests.swift */; };
+		CB91290E2B5E4FC700E23B6E /* SportEventsListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB91290D2B5E4FC700E23B6E /* SportEventsListPresenterTests.swift */; };
+		CB9129102B5E4FD400E23B6E /* SportEventsListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB91290F2B5E4FD400E23B6E /* SportEventsListInteractorTests.swift */; };
+		CB9129122B5E4FE700E23B6E /* SportEventsListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9129112B5E4FE700E23B6E /* SportEventsListRouterTests.swift */; };
 		CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */; };
 		CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */; };
 		CBF1E7A92B586310002D5FCD /* NetworkClientTestsMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */; };
@@ -191,6 +196,11 @@
 		CB9129022B5DEF2C00E23B6E /* SportEventsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportEventsListRouter.swift; sourceTree = "<group>"; };
 		CB9129042B5DF3EA00E23B6E /* EventDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDay.swift; sourceTree = "<group>"; };
 		CB9129062B5E01E900E23B6E /* String+parseToHomeAndAway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+parseToHomeAndAway.swift"; sourceTree = "<group>"; };
+		CB9129092B5E4FA200E23B6E /* SportEventsListBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportEventsListBuilderTests.swift; sourceTree = "<group>"; };
+		CB91290B2B5E4FB900E23B6E /* SportEventsListViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportEventsListViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
+		CB91290D2B5E4FC700E23B6E /* SportEventsListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportEventsListPresenterTests.swift; sourceTree = "<group>"; };
+		CB91290F2B5E4FD400E23B6E /* SportEventsListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportEventsListInteractorTests.swift; sourceTree = "<group>"; };
+		CB9129112B5E4FE700E23B6E /* SportEventsListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportEventsListRouterTests.swift; sourceTree = "<group>"; };
 		CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		CBF1E7A32B586080002D5FCD /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
 		CBF1E7A82B586310002D5FCD /* NetworkClientTestsMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTestsMocks.swift; sourceTree = "<group>"; };
@@ -364,6 +374,7 @@
 		CB245E3A2B5A0CD100E10119 /* ModulesTests */ = {
 			isa = PBXGroup;
 			children = (
+				CB9129082B5E4F7F00E23B6E /* SportEventsListTests */,
 				CB350FD82B5D63A300D3D82D /* SportsListTests */,
 				CB245E522B5A704F00E10119 /* StatusScreenTests */,
 				CB245E3B2B5A0CE100E10119 /* MainFlowModuleTests */,
@@ -464,6 +475,18 @@
 				CB9129022B5DEF2C00E23B6E /* SportEventsListRouter.swift */,
 			);
 			path = SportEventsList;
+			sourceTree = "<group>";
+		};
+		CB9129082B5E4F7F00E23B6E /* SportEventsListTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB9129092B5E4FA200E23B6E /* SportEventsListBuilderTests.swift */,
+				CB91290B2B5E4FB900E23B6E /* SportEventsListViewControllerSnapshotTests.swift */,
+				CB91290D2B5E4FC700E23B6E /* SportEventsListPresenterTests.swift */,
+				CB91290F2B5E4FD400E23B6E /* SportEventsListInteractorTests.swift */,
+				CB9129112B5E4FE700E23B6E /* SportEventsListRouterTests.swift */,
+			);
+			path = SportEventsListTests;
 			sourceTree = "<group>";
 		};
 		CBF1E7A52B58629A002D5FCD /* NetworkingTests */ = {
@@ -693,6 +716,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9129102B5E4FD400E23B6E /* SportEventsListInteractorTests.swift in Sources */,
 				CB350FF42B5DB2E100D3D82D /* EventViewSnapshotTests.swift in Sources */,
 				CB245E542B5A707A00E10119 /* StatusScreenBuilderTests.swift in Sources */,
 				CB245E3D2B5A0D2500E10119 /* MainFlowModuleBuilderTests.swift in Sources */,
@@ -701,6 +725,7 @@
 				CB245E582B5A805600E10119 /* StatusScreenInteractorTests.swift in Sources */,
 				CB350FE02B5D641100D3D82D /* SportsListPresenterTests.swift in Sources */,
 				CB245E2E2B59EDFB00E10119 /* GetEventsDataRequestTests.swift in Sources */,
+				CB91290E2B5E4FC700E23B6E /* SportEventsListPresenterTests.swift in Sources */,
 				CB245E5A2B5A854800E10119 /* StatusScreenRouterTests.swift in Sources */,
 				CB245E3F2B5A0F0000E10119 /* MainFlowModulePresenterTests.swift in Sources */,
 				CB350FE42B5D642A00D3D82D /* SportsListRouterTests.swift in Sources */,
@@ -708,12 +733,15 @@
 				CB245E5F2B5A93F700E10119 /* StatusScreenViewControllerSnapshotTests.swift in Sources */,
 				CB350FE22B5D642000D3D82D /* SportsListInteractorTests.swift in Sources */,
 				CB350FF02B5DAB5700D3D82D /* MarketEventViewSnapshotTests.swift in Sources */,
+				CB91290A2B5E4FA200E23B6E /* SportEventsListBuilderTests.swift in Sources */,
 				CB350FDC2B5D63D000D3D82D /* SportsListBuilderTests.swift in Sources */,
 				CBF1E7A42B586080002D5FCD /* NetworkClientTests.swift in Sources */,
+				CB9129122B5E4FE700E23B6E /* SportEventsListRouterTests.swift in Sources */,
 				CB245E102B59721900E10119 /* GetStatusRequestTests.swift in Sources */,
 				CB350FEA2B5D927800D3D82D /* OddsViewSnapshotTests.swift in Sources */,
 				CB245E562B5A7CD000E10119 /* StatusScreenPresenterTests.swift in Sources */,
 				CBF1E7A92B586310002D5FCD /* NetworkClientTestsMocks.swift in Sources */,
+				CB91290C2B5E4FB900E23B6E /* SportEventsListViewControllerSnapshotTests.swift in Sources */,
 				CB350FDE2B5D63FC00D3D82D /* SportsListViewControllerSnapshotTests.swift in Sources */,
 				CB350FEC2B5D9CD700D3D82D /* RunnerViewSnapshotTests.swift in Sources */,
 				CB245E182B5983E800E10119 /* GetSportsDataRequestTests.swift in Sources */,

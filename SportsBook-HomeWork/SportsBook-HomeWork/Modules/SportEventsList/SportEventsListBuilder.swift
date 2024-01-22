@@ -37,6 +37,7 @@ final class SportEventsListBuilder: SportEventsListBuildable {
 
         viewController.output = presenter
         interactor.output = presenter
+        router.output = presenter
 
         return viewController
     }

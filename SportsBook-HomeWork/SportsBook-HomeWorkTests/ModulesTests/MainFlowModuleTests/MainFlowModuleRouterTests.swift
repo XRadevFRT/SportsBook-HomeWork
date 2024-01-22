@@ -13,6 +13,7 @@ final class MainFlowModuleRouterTests: XCTestCase {
     private var mockMainFlowRouterOutput: MockMainFlowRouterOutput!
     private var mockStatusScreenBuilder: MockStatusScreenBuilder!
     private var mockSportsListBuilder: MockSportsListBuilder!
+    private var mockSportEventsListBuilder: MockSportEventsBuilder!
     private var mockUIWindow: MockUIWindow!
     private var router: MainFlowModuleRouter!
 
@@ -24,8 +25,10 @@ final class MainFlowModuleRouterTests: XCTestCase {
         mockUIWindow = .init()
         mockStatusScreenBuilder = .init()
         mockSportsListBuilder = .init()
+        mockSportEventsListBuilder = .init()
         router = MainFlowModuleRouter(statusScreenBuilder: mockStatusScreenBuilder,
-                                      sportsListBuilder: mockSportsListBuilder,
+                                      sportsListBuilder: mockSportsListBuilder, 
+                                      sportEventsListBuilder: mockSportEventsListBuilder,
                                       mainNavigationController: mockUINavigationController)
         router.output = mockMainFlowRouterOutput
     }
@@ -35,6 +38,7 @@ final class MainFlowModuleRouterTests: XCTestCase {
         mockMainFlowRouterOutput = nil
         mockStatusScreenBuilder = nil
         mockSportsListBuilder = nil
+        mockSportEventsListBuilder = nil
         mockUIWindow = nil
         router = nil
     }
@@ -67,13 +71,15 @@ final class MainFlowModuleRouterTests: XCTestCase {
     }
 
     func testSportsListHandler() {
+        let expectedSport = Sport.init(id: 33, name: "Football")
+
         mockSportsListBuilder.buildHandler = { result in
-            result(.sportSelected(10))
+            result(.sportSelected(.init(id: 33, name: "Football")))
             return .init()
         }
 
-        mockMainFlowRouterOutput.selectedSportHandler = { sportId in
-            XCTAssertEqual(sportId, 10)
+        mockMainFlowRouterOutput.selectedSportHandler = { sport in
+            XCTAssertEqual(sport, expectedSport)
         }
 
         router.showSportsListScreen()
@@ -81,6 +87,20 @@ final class MainFlowModuleRouterTests: XCTestCase {
         // Test
         XCTAssertEqual(mockUINavigationController.viewControllersSetCallCount, 1)
         XCTAssertEqual(mockMainFlowRouterOutput.selectedSportCallCount, 1)
+    }
+
+    func testShowEventsList() {
+        let expectedSport = Sport.init(id: 323, name: "Tennis")
+
+        mockSportEventsListBuilder.buildHandler = { sport in
+            XCTAssertEqual(sport, expectedSport)
+            return .init()
+        }
+
+        router.showSportEventsList(sport: .init(id: 323, name: "Tennis"))
+
+        // Test
+        XCTAssertEqual(mockSportEventsListBuilder.buildCallCount, 1)
     }
 }
 
@@ -119,11 +139,11 @@ private extension MainFlowModuleRouterTests {
 
     final class MockMainFlowRouterOutput: MainFlowRouterOutput {
         var selectedSportCallCount = 0
-        var selectedSportHandler: ((Int) -> Void)?
-        func selectedSport(_ sportId: Int) {
+        var selectedSportHandler: ((Sport) -> Void)?
+        func selectedSport(_ sport: Sport) {
             selectedSportCallCount += 1
             if let selectedSportHandler = selectedSportHandler {
-                selectedSportHandler(sportId)
+                selectedSportHandler(sport)
             }
         }
 
@@ -150,6 +170,18 @@ private extension MainFlowModuleRouterTests {
             buildCallCount += 1
             if let buildHandler = buildHandler {
                 return buildHandler(handler)
+            }
+            return .init()
+        }
+    }
+
+    final class MockSportEventsBuilder: SportEventsListBuildable {
+        var buildCallCount = 0
+        var buildHandler: ((Sport) -> UIViewController)?
+        func build(sport: Sport) -> UIViewController {
+            buildCallCount += 1
+            if let buildHandler = buildHandler {
+                return buildHandler(sport)
             }
             return .init()
         }
