@@ -13,7 +13,7 @@ protocol SportsListViewControllerInput: Activable {
 
 protocol SportsListViewControllerOutput: AnyObject {
     func viewIsReady()
-    func didSelectSport(_ sportId: Int)
+    func didSelectSport(_ sport: Sport)
 }
 
 final class SportsListViewController: UIViewController {
@@ -49,12 +49,7 @@ final class SportsListViewController: UIViewController {
 
 // MARK: - UITableViewDataSource
 
-extension SportsListViewController: UITableViewDataSource, UITableViewDelegate {
-
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        UITableView.automaticDimension
-    }
-
+extension SportsListViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         1
     }
@@ -64,23 +59,33 @@ extension SportsListViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueCell(ofType: GenericTableViewCell<BaseSportView>.self)
-        let selectedSport = sports[indexPath.row]
+        guard let cell = tableView.dequeueCell(ofType: GenericTableViewCell<BaseSportView>.self, for: indexPath) else {
+            return .init()
+        }
+
+        let sport = sports[indexPath.row]
 
         // Configure separators
         let isFirstCell = indexPath.row == 0
         let isLastCell = indexPath.row == tableView.numberOfRows(inSection: indexPath.section) - 1
         cell.configureSeparators(isFirst: isFirstCell, isLast: isLastCell)
-        cell.separatorHeight = 3
 
         cell.insets = Theme.Spacings.standardCellHSpacing
 
-        cell.embeddedView.updateTitle(selectedSport.name)
+        cell.embeddedView.updateTitle(sport.name)
         cell.embeddedView.onPressed = { [weak output] in
-            output?.didSelectSport(selectedSport.id)
+            output?.didSelectSport(sport)
         }
 
         return cell
+    }
+}
+
+// MARK: - UITableViewDataSource
+
+extension SportsListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        UITableView.automaticDimension
     }
 }
 

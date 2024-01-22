@@ -82,6 +82,11 @@
 		CB350FF42B5DB2E100D3D82D /* EventViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350FF32B5DB2E100D3D82D /* EventViewSnapshotTests.swift */; };
 		CB9128F52B5DDC0800E23B6E /* EventDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9128F42B5DDC0800E23B6E /* EventDateView.swift */; };
 		CB9128F72B5DDD7400E23B6E /* EventDateViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9128F62B5DDD7400E23B6E /* EventDateViewSnapshotTests.swift */; };
+		CB9128FB2B5DEF0A00E23B6E /* SportEventsListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9128FA2B5DEF0A00E23B6E /* SportEventsListBuilder.swift */; };
+		CB9128FD2B5DEF1200E23B6E /* SportEventsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9128FC2B5DEF1200E23B6E /* SportEventsListViewController.swift */; };
+		CB9128FF2B5DEF1C00E23B6E /* SportEventsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9128FE2B5DEF1C00E23B6E /* SportEventsListPresenter.swift */; };
+		CB9129012B5DEF2600E23B6E /* SportEventsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9129002B5DEF2600E23B6E /* SportEventsListInteractor.swift */; };
+		CB9129032B5DEF2C00E23B6E /* SportEventsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9129022B5DEF2C00E23B6E /* SportEventsListRouter.swift */; };
 		CB9129052B5DF3EA00E23B6E /* EventDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9129042B5DF3EA00E23B6E /* EventDay.swift */; };
 		CB9129072B5E01E900E23B6E /* String+parseToHomeAndAway.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9129062B5E01E900E23B6E /* String+parseToHomeAndAway.swift */; };
 		CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */; };
@@ -179,6 +184,11 @@
 		CB350FF32B5DB2E100D3D82D /* EventViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewSnapshotTests.swift; sourceTree = "<group>"; };
 		CB9128F42B5DDC0800E23B6E /* EventDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDateView.swift; sourceTree = "<group>"; };
 		CB9128F62B5DDD7400E23B6E /* EventDateViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDateViewSnapshotTests.swift; sourceTree = "<group>"; };
+		CB9128FA2B5DEF0A00E23B6E /* SportEventsListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportEventsListBuilder.swift; sourceTree = "<group>"; };
+		CB9128FC2B5DEF1200E23B6E /* SportEventsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportEventsListViewController.swift; sourceTree = "<group>"; };
+		CB9128FE2B5DEF1C00E23B6E /* SportEventsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportEventsListPresenter.swift; sourceTree = "<group>"; };
+		CB9129002B5DEF2600E23B6E /* SportEventsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportEventsListInteractor.swift; sourceTree = "<group>"; };
+		CB9129022B5DEF2C00E23B6E /* SportEventsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportEventsListRouter.swift; sourceTree = "<group>"; };
 		CB9129042B5DF3EA00E23B6E /* EventDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDay.swift; sourceTree = "<group>"; };
 		CB9129062B5E01E900E23B6E /* String+parseToHomeAndAway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+parseToHomeAndAway.swift"; sourceTree = "<group>"; };
 		CBF1E7A12B585E84002D5FCD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
@@ -236,6 +246,7 @@
 		CB0D360C2B581F2100D76D40 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CB9128F92B5DEEE800E23B6E /* SportEventsList */,
 				CB245E6F2B5C168100E10119 /* SportsList */,
 				CB245E432B5A153500E10119 /* StatusScreen */,
 				CB245E312B59FF3100E10119 /* MainFlowModule */,
@@ -443,6 +454,18 @@
 			path = SportsListTests;
 			sourceTree = "<group>";
 		};
+		CB9128F92B5DEEE800E23B6E /* SportEventsList */ = {
+			isa = PBXGroup;
+			children = (
+				CB9128FA2B5DEF0A00E23B6E /* SportEventsListBuilder.swift */,
+				CB9128FC2B5DEF1200E23B6E /* SportEventsListViewController.swift */,
+				CB9128FE2B5DEF1C00E23B6E /* SportEventsListPresenter.swift */,
+				CB9129002B5DEF2600E23B6E /* SportEventsListInteractor.swift */,
+				CB9129022B5DEF2C00E23B6E /* SportEventsListRouter.swift */,
+			);
+			path = SportEventsList;
+			sourceTree = "<group>";
+		};
 		CBF1E7A52B58629A002D5FCD /* NetworkingTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -604,6 +627,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9129032B5DEF2C00E23B6E /* SportEventsListRouter.swift in Sources */,
 				CB245E4A2B5A15FB00E10119 /* StatusScreenPresenter.swift in Sources */,
 				CB245E7A2B5C1D4200E10119 /* SportsListRouter.swift in Sources */,
 				CB245E302B59F31E00E10119 /* NumberFormatter+OrdinalNumber.swift in Sources */,
@@ -617,6 +641,8 @@
 				CB245E482B5A15D600E10119 /* StatusScreenViewController.swift in Sources */,
 				CB245E512B5A208C00E10119 /* Activable.swift in Sources */,
 				CB9129052B5DF3EA00E23B6E /* EventDay.swift in Sources */,
+				CB9128FB2B5DEF0A00E23B6E /* SportEventsListBuilder.swift in Sources */,
+				CB9128FF2B5DEF1C00E23B6E /* SportEventsListPresenter.swift in Sources */,
 				CB245DFC2B589A7300E10119 /* URL+Validation.swift in Sources */,
 				CB245E372B59FF8600E10119 /* MainFlowModuleRouter.swift in Sources */,
 				CB245E782B5C16E200E10119 /* SportsListInteractor.swift in Sources */,
@@ -638,6 +664,7 @@
 				CBFF936B2B57FE62003840F2 /* AppDelegate.swift in Sources */,
 				CB245E662B5AB38F00E10119 /* SnapshotSupportContainer.swift in Sources */,
 				CBFF936D2B57FE62003840F2 /* SceneDelegate.swift in Sources */,
+				CB9128FD2B5DEF1200E23B6E /* SportEventsListViewController.swift in Sources */,
 				CB245E4C2B5A160700E10119 /* StatusScreenInteractor.swift in Sources */,
 				CB245E8D2B5C950900E10119 /* TapAnimatedView.swift in Sources */,
 				CB9129072B5E01E900E23B6E /* String+parseToHomeAndAway.swift in Sources */,
@@ -649,6 +676,7 @@
 				CB245E352B59FF7400E10119 /* MainFlowModulePresenter.swift in Sources */,
 				CB245E462B5A157000E10119 /* StatusScreenBuilder.swift in Sources */,
 				CB350FD72B5CA47900D3D82D /* Theme.swift in Sources */,
+				CB9129012B5DEF2600E23B6E /* SportEventsListInteractor.swift in Sources */,
 				CB245E742B5C16B800E10119 /* SportsListViewController.swift in Sources */,
 				CB245DF82B5899DD00E10119 /* NetworkRequestProtocol.swift in Sources */,
 				CBF1E7A22B585E84002D5FCD /* NetworkClient.swift in Sources */,
